@@ -20,12 +20,11 @@ const NavBar = () => {
 
     window.addEventListener('scroll', onScroll);
 
-    // const removeOnScroll = () => window.removeEventListener('scroll', onScroll);
-    // return removeOnScroll();
-    return () => window.removeEventListener('scroll', onScroll);
+    const removeOnScroll = () => window.removeEventListener('scroll', onScroll);
+    return removeOnScroll();
   }, []);
 
-  //   const updateActiveLink = (activedLink) => setActiveLink(activedLink);
+  const updateActiveLink = (activedLink) => setActiveLink(activedLink);
 
   return (
     <Navbar expand='lg' className={scrolled ? 'scrolled' : ''}>
@@ -43,8 +42,7 @@ const NavBar = () => {
               className={
                 activeLink === 'home' ? 'active navbar-link' : 'navbar-link'
               }
-              onClick={setActiveLink('home')}
-              //   onClick={() => updateActiveLink('home')}
+              onClick={() => updateActiveLink('home')}
             >
               Home
             </Nav.Link>
@@ -53,8 +51,7 @@ const NavBar = () => {
               className={
                 activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'
               }
-              onClick={setActiveLink('skills')}
-              //   onClick={() => updateActiveLink('skills')}
+              onClick={() => updateActiveLink('skills')}
             >
               Skills
             </Nav.Link>
@@ -63,8 +60,7 @@ const NavBar = () => {
               className={
                 activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'
               }
-              onClick={setActiveLink('projects')}
-              //   onClick={() => updateActiveLink('projects')}
+              onClick={() => updateActiveLink('projects')}
             >
               Projects
             </Nav.Link>
