@@ -1,3 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&family=Cantarell&family=DM+Sans&family=DM+Serif+Display&family=Fjalla+One&family=Josefin+Sans:wght@300&family=Oswald&family=Source+Sans+Pro&family=Yeseva+One&display=swap');
+
+/* General CSS */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-padding-top: 75px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #282c34 !important; /* important declaration (preferred) */
+  color: white !important;
+  position: relative;
+  font-family: 'Yeseva One', 'Josefin Sans', serif, sans-serif !important;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+  line-height: normal;
+}
+
+/* Default CSS */
+
 .App {
   text-align: center;
 }
