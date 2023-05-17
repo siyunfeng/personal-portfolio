@@ -88,12 +88,6 @@ const NavBar = () => {
                 <img src={navIcon3} alt='' />
               </a>
             </div>
-            <button
-              className='navbar-button'
-              onClick={() => console.log('connect button works')}
-            >
-              <span>Let's Connect</span>
-            </button>
           </span>
         </Navbar.Collapse>
       </Container>

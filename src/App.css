@@ -17,8 +17,8 @@ body {
   background-color: #282c34 !important; /* important declaration (preferred) */
   color: white !important;
   position: relative;
-  font-family: 'DM Serif Display', 'Alegreya', 'Josefin Sans', serif, sans-serif !important;
-  font-weight: 400;
+  font-family: 'Source Sans Pro', 'Josefin Sans', 'Alegreya', serif, sans-serif !important;
+  /* font-weight: 400; */
   overflow-x: hidden;
 }
 
@@ -26,6 +26,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
   margin: 0;
   line-height: normal;
+  font-family: 'Alegreya', serif !important;
 }
 
 /* NavBar */
@@ -177,6 +178,66 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
 }
+
+/* Banner */
+
+.banner {
+  margin-top: 0;
+  padding: 260px 0 100px 0;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.banner .tagline {
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  padding: 8px 10px;
+  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+
+.banner h1 {
+  font-size: 65px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.banner p {
+  color: #B8B8B8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  width: 96%;
+}
+
+.banner-connect-button {
+  font-family: 'Fjalla One', 'Yeseva One', sans-serif;
+  font-size: larger;
+  padding: 0.5rem 2rem;
+  transform: translateY(calc(var(--y, 0) * 1%)) scale(var(--scale));
+  transition: transform 0.1s;
+  position: relative;
+}
+
+.banner-connect-button:hover {
+  --y: -10;
+  --scale: 1.1;
+  --border-scale: 1;
+}
+
+.banner-connect-button:active {
+  --y: 5%;
+  --scale: 0.9;
+  --border-scale: 0.9, 0.8;
+}
+
 
 
 /* Default CSS */
