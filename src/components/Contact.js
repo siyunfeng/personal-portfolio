@@ -18,7 +18,10 @@ const Contact = () => {
     setFormInfo({ ...formInfo, [formInfoType]: infoToUpdate });
   };
 
-  const handleSubmit = () => {};
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setButtonText('Sending...');
+  };
 
   return (
     <section className='contact' id='connect'>
