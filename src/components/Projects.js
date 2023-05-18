@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react';
 import vintagerImg from '../assets/img/vintagerImg.png';
 import partypalImg from '../assets/img/partypalImg.png';
 import theGraceBritishBakeOff from '../assets/img/the-grace-british-bake-off.png';
