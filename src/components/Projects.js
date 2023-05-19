@@ -10,16 +10,22 @@ const Projects = () => {
       title: 'Vintager',
       description: `This solo project is a blog about vintage fashion built using Next.js. Data is stored in Hygraph and queried using GraphQL. Visitors can submit comments which need to be approved by the admin before they are visible.`,
       imgUrl: vintagerImg,
+      githubUrl: 'https://github.com/siyunfeng/vintage_blog',
+      websiteUrl: 'https://vintager.onrender.com/',
     },
     {
       title: 'The Grace British Bake Off',
       description: `PartyPal is an application where you can find a curated list of highly rated caterer and venue recommendations based on location for your next party!`,
       imgUrl: theGraceBritishBakeOff,
+      githubUrl: 'https://github.com/siyunfeng/The-Grace-British-Bake-Off',
+      websiteUrl: 'https://grace-shopper-e.onrender.com/',
     },
     {
       title: 'PartyPal',
       description: `E-commerce site selling baked goods. I was responsible for styling the website, creating the single product and cart React components, and transitioning the guest cart state from local storage to the Redux store.`,
       imgUrl: partypalImg,
+      githubUrl: 'https://github.com/siyunfeng/PartyPal',
+      websiteUrl: 'https://partypal.onrender.com/',
     },
   ];
   return (
@@ -54,10 +60,10 @@ const Projects = () => {
                   </Row>
                 </Tab.Pane>
                 <Tab.Pane eventKey='second'>
-                  <p>Coming soon...</p>
+                  <p className='proj-coming-soon'>Coming soon...</p>
                 </Tab.Pane>
                 <Tab.Pane eventKey='third'>
-                  <p>Coming soon...</p>
+                  <p className='proj-coming-soon'>Coming soon...</p>
                 </Tab.Pane>
               </Tab.Content>
             </Tab.Container>

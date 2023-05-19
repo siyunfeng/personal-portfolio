@@ -1,5 +1,5 @@
 import { Container, Row, Col } from 'react-bootstrap';
-import headerImg from '../assets/img/header-avatar.png';
+import headerImg from '../assets/img/banner-avatar2.png';
 
 const Banner = () => {
   return (
@@ -7,7 +7,7 @@ const Banner = () => {
       <Container>
         <Row className='align-items-center'>
           <Col xs={12} md={6} xl={7}>
-            <span className='tagline'>Welcome to My Portfolio</span>
+            {/* <span className='tagline'>Welcome to My Portfolio</span> */}
             <h1>{`Hi, I'm Siyun.`}</h1>
             <h4 className='wrap'>Full Stack Engineer</h4>
             <p>

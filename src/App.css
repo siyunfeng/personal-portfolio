@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&family=Cantarell&family=DM+Sans&family=DM+Serif+Display&family=Fjalla+One&family=Josefin+Sans:wght@300&family=Oswald&family=Source+Sans+Pro&family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&family=Cantarell&family=Cherry+Swash&family=DM+Sans&family=DM+Serif+Display&family=Fjalla+One&family=Flamenco&family=Indie+Flower&family=Josefin+Sans:wght@300&family=Oswald&family=Source+Sans+Pro&family=Special+Elite&family=Ubuntu&family=Yeseva+One&display=swap');
 
 /* General CSS */
 
@@ -17,7 +17,7 @@ body {
   background-color: #282c34 !important; /* important declaration (preferred) */
   color: white !important;
   position: relative;
-  font-family: 'Cantarell', 'Source Sans Pro', 'Alegreya', serif, sans-serif !important;
+  font-family: 'Ubuntu', 'Alegreya', serif, sans-serif !important;
   overflow-x: hidden;
 }
 
@@ -30,6 +30,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /* NavBar */
 
+#basic-navbar-nav {
+  font-family: 'Cherry Swash', Arial, sans-serif;
+}
+
 nav.navbar {
   padding: 18px 0;
   position: fixed;
@@ -37,6 +41,7 @@ nav.navbar {
   top: 0;
   z-index: 9999;
   transition:  0.32s ease-in-out;
+  background-color: rgba(128, 128, 128, 0.629);
 }
 nav.navbar.scrolled {
   padding: 0px 0;
@@ -181,11 +186,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /* Banner */
 
 .banner {
-  margin-top: 0;
-  padding: 260px 0 100px 0;
+  padding: 200px 0 130px;
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-image: url('./assets/img/banner-bg.png');
 }
 
 .banner .tagline {
@@ -206,14 +211,22 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1;
   margin-bottom: 20px;
   display: block;
+  color: rgba(100, 64, 39, 0.924);
+}
+
+.banner h4 {
+  color: rgba(100, 64, 39, 0.924);
 }
 
 .banner p {
-  color: #B8B8B8;
+  color: #777676;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 96%;
+  padding: 1rem;
+  margin: 0 1rem 1rem;
+  text-align: left;
 }
 
 .banner-connect-button {
@@ -240,9 +253,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /* Projects */
 
 .project {
-  padding: 80px 0;
+  padding: 80px;
   position: relative;
-  background-color: black;
+  color: rgba(100, 64, 39, 0.924);
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../src/assets/img/projects-bg3.png');
 }
 .project h2 {
 	font-size: 45px;
@@ -250,7 +267,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
 }
 .project p {
-  color: #B8B8B8;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
@@ -272,9 +288,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-color: transparent;
   border-radius: 0;
   padding: 17px 0;
-  color: #fff;
+  color: rgba(100, 64, 39, 0.924);
   width: 100%;
   font-size: 17px;
+  font-family: 'DM Sans', monospace, serif;
   letter-spacing: 0.8px;
   font-weight: 500;
   position: relative;
@@ -287,7 +304,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     position: absolute;
     width: 0;
     height: 100%;
-    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+    /* background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%); */
+    background: linear-gradient(90.21deg, #fba995f2 -5.91%, #f9e1ac 111.58%);
     top: 0;
     left: 0;
     z-index: -1;
@@ -324,8 +342,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .proj-imgbx::before {
   content: "";
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-  opacity: 0.85;
+  /* background: linear-gradient(90.21deg, #aa367c -5.91%, #4A2FBD 111.58%, #fdcda9 10.58%); */
+  background: linear-gradient(90.21deg, #d38e7dea -5.91%, #e8d19bf4 111.58%);
+  opacity: 0.95;
   position: absolute;
   width: 100%;
   height: 0;
@@ -339,7 +358,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .proj-txtx {
   position: absolute;
   text-align: center;
-  padding: 10px;
+  padding: 18px;
   top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -374,6 +393,29 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 35%;
   right: 0;
   z-index: -4;
+}
+
+.proj-link-box a {
+  padding: 10px;
+}
+
+.proj-coming-soon {
+  font-family: 'Special Elite', sans-serif;
+}
+
+/* Contact */
+
+.contact {
+  padding: 80px;
+}
+
+/* Footer */
+
+.footer {
+  padding: 50px 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* Default CSS */
