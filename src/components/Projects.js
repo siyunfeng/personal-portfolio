@@ -5,7 +5,7 @@ import { Container, Row, Col, Tab, Nav } from 'react-bootstrap';
 import ProjectCard from './ProjectCard';
 
 const Projects = () => {
-  const projects = [
+  const ghProject = [
     {
       title: 'Vintager',
       description: `This solo project is a blog about vintage fashion built using Next.js. Data is stored in Hygraph and queried using GraphQL. Visitors can submit comments which need to be approved by the admin before they are visible.`,
@@ -28,6 +28,24 @@ const Projects = () => {
       websiteUrl: 'https://partypal.onrender.com/',
     },
   ];
+
+  const gameTimeProject = [
+    {
+      title: 'Guess My Number',
+      description: ``,
+      imgUrl: '',
+      githubUrl: '',
+      websiteUrl: '',
+    },
+    {
+      title: 'Pig Game',
+      description: ``,
+      imgUrl: '',
+      githubUrl: '',
+      websiteUrl: '',
+    },
+  ];
+
   return (
     <section className='project' id='project'>
       <Container>
@@ -45,7 +63,7 @@ const Projects = () => {
                   <Nav.Link eventKey='first'>Boot Camp</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey='second'>My Notes</Nav.Link>
+                  <Nav.Link eventKey='second'>Game Time</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
                   <Nav.Link eventKey='third'>Algorithms Practice</Nav.Link>
@@ -54,7 +72,7 @@ const Projects = () => {
               <Tab.Content>
                 <Tab.Pane eventKey='first'>
                   <Row>
-                    {projects.map((project, index) => (
+                    {ghProject.map((project, index) => (
                       <ProjectCard key={index} {...project} />
                     ))}
                   </Row>
