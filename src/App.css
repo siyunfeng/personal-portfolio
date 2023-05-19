@@ -250,6 +250,45 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   --border-scale: 0.9, 0.8;
 }
 
+/* Skills */
+
+.skills {
+  padding: 80px;
+  position: relative;
+  color: rgba(100, 64, 39, 0.924);
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../src/assets/img/Tech.png');
+}
+
+.skills h2 {
+	font-size: 45px;
+	font-weight: 700;
+  text-align: center;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content:space-evenly;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.each-skill {
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 15px;
+}
+
+.tech-icon img {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+}
+
 /* Projects */
 
 .project {
@@ -261,11 +300,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-repeat: no-repeat;
   background-image: url('../src/assets/img/projects-bg3.png');
 }
+
 .project h2 {
 	font-size: 45px;
 	font-weight: 700;
   text-align: center;
 }
+
 .project p {
   font-size: 18px;
   letter-spacing: 0.8px;
@@ -274,6 +315,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
   width: 56%;
 }
+
 .project .nav.nav-pills {
   width: 72%;
   margin: 0 auto;
@@ -407,6 +449,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .contact {
   padding: 80px;
+  background-image: url('../src/assets/img/projects-bg1.png');
 }
 
 /* Footer */
