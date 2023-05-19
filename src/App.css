@@ -279,7 +279,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .each-skill {
   padding: 1rem;
-  margin: 1rem;
+  margin: 0 1rem;
   font-size: 15px;
 }
 
@@ -287,6 +287,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 110px;
   height: 110px;
   object-fit: contain;
+}
+
+div .tech-name {
+  padding: 0.5rem 0;
 }
 
 /* Projects */
