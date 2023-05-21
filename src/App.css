@@ -394,7 +394,6 @@ div .tech-name {
     position: absolute;
     width: 0;
     height: 100%;
-    /* background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%); */
     background: linear-gradient(90.21deg, #fba995f2 -5.91%, #f9e1ac 111.58%);
     top: 0;
     left: 0;
@@ -433,7 +432,6 @@ div .tech-name {
 
 .proj-imgbx::before {
   content: "";
-  /* background: linear-gradient(90.21deg, #aa367c -5.91%, #4A2FBD 111.58%, #fdcda9 10.58%); */
   background: linear-gradient(90.21deg, #d38e7dea -5.91%, #e8d19bf4 111.58%);
   opacity: 0.95;
   position: absolute;
@@ -498,7 +496,14 @@ div .tech-name {
 
 .contact {
   padding: 80px;
-  background-image: url('../src/assets/img/projects-bg1.png');
+  background-image: url('../src/assets/img/projects-bg2.png');
+}
+
+.contact-logo {
+  border-radius: 50%;
+  width: 18rem;
+  animation: App-logo-spin 10s infinite linear;
+  margin: 1rem 0;
 }
 
 /* Footer */
@@ -508,6 +513,7 @@ div .tech-name {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-image: url('../src/assets/img/projects-bg2.png');
 }
 
 /* Default CSS */

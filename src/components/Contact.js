@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import contactImg from '../assets/img/work-from-home-1.png';
+import contactLogo from '../assets/img/logo3.png';
 
 const Contact = () => {
   const initialFormInfo = {
@@ -24,15 +25,16 @@ const Contact = () => {
   };
 
   return (
-    <section className='contact' id='connect'>
+    <section className='contact' id='contact'>
       <Container>
-        <Row className='align-items-center'>
+        <Row className='align-items-center contact-box'>
           <Col md={6}>
             <img src={contactImg} alt={`Let's connect!`} />
           </Col>
           <Col>
-            <h2>Get in Touch</h2>
-            <Form onSubmit={handleSubmit}>
+            <h2 className='get-in-touch'>Get in Touch</h2>
+            <img src={contactLogo} alt='logo' className='contact-logo' />
+            {/* <Form onSubmit={handleSubmit}>
               <Row>
                 <Form.Group as={Col} className='px-2'>
                   <Form.Label>First Name</Form.Label>
@@ -81,7 +83,7 @@ const Contact = () => {
                 </p>
               </Row>
               <Button type='submit'>{buttonText}</Button>
-            </Form>
+            </Form> */}
           </Col>
         </Row>
       </Container>
