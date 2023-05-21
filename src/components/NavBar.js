@@ -5,6 +5,8 @@ import navLinkedIn from '../assets/img/nav-linkedin.svg';
 import navGitHub from '../assets/img/nav-github.png';
 import navGmail from '../assets/img/nav-icon3.svg';
 
+const navLinkNames = ['home', 'skills', 'projects'];
+
 const NavBar = () => {
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
@@ -26,6 +28,22 @@ const NavBar = () => {
 
   const updateActiveLink = (activedLink) => setActiveLink(activedLink);
 
+  const navLinks = (navLink) => {
+    const linkName = navLink.charAt(0).toUpperCase() + navLink.slice(1);
+
+    return (
+      <Nav.Link
+        href={`#${navLink}`}
+        className={
+          activeLink === navLink ? 'active navbar-link' : 'navbar-link'
+        }
+        onClick={() => updateActiveLink(navLink)}
+      >
+        {linkName}
+      </Nav.Link>
+    );
+  };
+
   return (
     <Navbar expand='lg' className={scrolled ? 'scrolled' : ''}>
       <Container>
@@ -37,33 +55,7 @@ const NavBar = () => {
         </Navbar.Toggle>
         <Navbar.Collapse id='basic-navbar-nav'>
           <Nav className='me-auto'>
-            <Nav.Link
-              href='#home'
-              className={
-                activeLink === 'home' ? 'active navbar-link' : 'navbar-link'
-              }
-              onClick={() => updateActiveLink('home')}
-            >
-              Home
-            </Nav.Link>
-            <Nav.Link
-              href='#skills'
-              className={
-                activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'
-              }
-              onClick={() => updateActiveLink('skills')}
-            >
-              Skills
-            </Nav.Link>
-            <Nav.Link
-              href='#projects'
-              className={
-                activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'
-              }
-              onClick={() => updateActiveLink('projects')}
-            >
-              Projects
-            </Nav.Link>
+            {navLinkNames.map((navLinkName) => navLinks(navLinkName))}
           </Nav>
           <span className='navbar-text'>
             <div className='social-icon'>
