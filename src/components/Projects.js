@@ -1,6 +1,7 @@
 import vintagerImg from '../assets/img/vintagerImg.png';
 import partypalImg from '../assets/img/partypalImg.png';
 import theGraceBritishBakeOff from '../assets/img/the-grace-british-bake-off.png';
+import guessSiyunNumber from '../assets/img/guess-siyun-number.png';
 import { Container, Row, Col, Tab, Nav } from 'react-bootstrap';
 import ProjectCard from './ProjectCard';
 
@@ -31,11 +32,11 @@ const Projects = () => {
 
   const gameTimeProject = [
     {
-      title: 'Guess My Number',
-      description: ``,
-      imgUrl: '',
-      githubUrl: '',
-      websiteUrl: '',
+      title: `Guess Siyun's Number`,
+      description: `A small guessing game I converted from a plain HTML, CSS and JavaScript project into React version. `,
+      imgUrl: guessSiyunNumber,
+      githubUrl: 'https://github.com/siyunfeng/guess-my-number',
+      websiteUrl: 'https://guess-siyun-number.onrender.com/',
     },
     {
       title: 'Pig Game',
@@ -78,7 +79,11 @@ const Projects = () => {
                   </Row>
                 </Tab.Pane>
                 <Tab.Pane eventKey='second'>
-                  <p className='proj-coming-soon'>Coming soon...</p>
+                  <Row>
+                    {gameTimeProject.map((project, index) => (
+                      <ProjectCard key={index} {...project} />
+                    ))}
+                  </Row>
                 </Tab.Pane>
                 <Tab.Pane eventKey='third'>
                   <p className='proj-coming-soon'>Coming soon...</p>
