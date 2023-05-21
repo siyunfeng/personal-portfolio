@@ -17,12 +17,9 @@ const Banner = () => {
               service experience allowed me to develop excellent communication,
               interpersonal, and problem-solving skills.
             </p>
-            <button
-              className='banner-connect-button'
-              onClick={() => console.log('connect button')}
-            >
-              Let's connect
-            </button>
+            <a href='https://www.linkedin.com/in/siyunfeng/'>
+              <button className='banner-connect-button'>Let's connect</button>
+            </a>
           </Col>
           <Col xs={12} md={6} xl={5}>
             <img src={headerImg} alt='Header Avatar' />
