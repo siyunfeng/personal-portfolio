@@ -57,10 +57,12 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   padding: 0 25px;
   font-size: 18px;
   opacity: 0.75;
+  transition: transform 0.2s;
 }
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     opacity: 1;
+    transform: scale(1.1);
 }
 span.navbar-text {
     display: flex;
@@ -70,11 +72,9 @@ span.navbar-text {
 #logo {
   border-radius: 50%;
   width: 6rem;
-  /* transition: transform 0.4s; */
 }
 
 #logo:hover {
-  /* transform: scale(1.1); */
   animation: App-logo-spin 8s linear;
 }
 

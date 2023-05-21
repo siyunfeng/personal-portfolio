@@ -41,7 +41,7 @@ const TechnicalSkills = () => {
         <div className='skills-list'>
           {skills.map((skill, index) => {
             return (
-              <div className='each-skill'>
+              <div className='each-skill' key={index}>
                 <div className='tech-icon'>
                   <img src={skill.techIcon} alt={skill.techName} />
                 </div>
