@@ -9,7 +9,7 @@ const Banner = () => {
           <Col xs={12} md={6} xl={7}>
             {/* <span className='tagline'>Welcome to My Portfolio</span> */}
             <h1>{`Hi, I'm Siyun.`}</h1>
-            <h4 className='wrap'>Full Stack Engineer</h4>
+            <h4 className='wrap'>Full Stack Developer</h4>
             <p>
               I recently graduated from Fullstack Academy as a full-stack
               engineer. My first programming language is JavaScript. I enjoy
