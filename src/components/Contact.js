@@ -31,12 +31,12 @@ const Contact = () => {
   return (
     <section className='contact' id='contact'>
       <Container>
+        <h2>Get in Touch</h2>
         <Row className='align-items-center contact-box'>
           <Col md={6}>
             <img src={contactImg} alt={`Let's connect!`} />
           </Col>
           <Col className='get-in-touch'>
-            <h2>Get in Touch</h2>
             <img src={contactLogo} alt='logo' className='contact-logo' />
             <a href={mailToUrl} target={`_blank`}>
               <button type='submit' className='contact-send-button'>

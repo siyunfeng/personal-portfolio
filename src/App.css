@@ -499,6 +499,13 @@ div .tech-name {
   background-image: url('../src/assets/img/projects-bg2.png');
 }
 
+.contact h2 {
+	font-size: 45px;
+	font-weight: 700;
+  text-align: center;
+  color: rgba(100, 64, 39, 0.924);
+}
+
 .get-in-touch {
   display: flex;
   flex-direction: column;
