@@ -3,7 +3,7 @@ import { Container, Navbar, Nav } from 'react-bootstrap';
 import logo from '../assets/img/logo3.png';
 import navLinkedIn from '../assets/img/nav-linkedin.svg';
 import navGitHub from '../assets/img/nav-github.png';
-import navGmail from '../assets/img/nav-icon3.svg';
+import navGmail from '../assets/img/nav-email.png';
 
 const navLinkNames = ['home', 'skills', 'projects'];
 
@@ -65,7 +65,7 @@ const NavBar = () => {
               <a href='https://github.com/siyunfeng'>
                 <img src={navGitHub} alt='My GitHub' />
               </a>
-              <a href='#'>
+              <a href='mailto:siyunf21@gmail.com'>
                 <img src={navGmail} alt='My Email' />
               </a>
             </div>

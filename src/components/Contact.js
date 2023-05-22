@@ -1,28 +1,32 @@
 import { useState } from 'react';
-import { Container, Row, Col, Form, Button } from 'react-bootstrap';
+import { Container, Row, Col, Form } from 'react-bootstrap';
 import contactImg from '../assets/img/work-from-home-1.png';
 import contactLogo from '../assets/img/logo3.png';
 
 const Contact = () => {
-  const initialFormInfo = {
-    firstName: '',
-    lastName: '',
-    email: '',
-    message: '',
-  };
+  // const initialFormInfo = {
+  //   myEmail: 'siyunf21@gmail.com',
+  //   senderEmail: '',
+  //   subject: '',
+  //   message: '',
+  // };
 
-  const [formInfo, setFormInfo] = useState(initialFormInfo);
-  const [buttonText, setButtonText] = useState('Send');
-  const [status, setStatus] = useState({});
+  const [mailToUrl, setMailToUrl] = useState('mailto:siyunf21@gmail.com');
+  // const [formInfo, setFormInfo] = useState(initialFormInfo);
 
-  const onFormUpdate = (formInfoType, infoToUpdate) => {
-    setFormInfo({ ...formInfo, [formInfoType]: infoToUpdate });
-  };
+  // const onFormUpdate = (formInfoType, infoToUpdate) => {
+  //   setFormInfo({ ...formInfo, [formInfoType]: infoToUpdate });
+  // };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setButtonText('Sending...');
-  };
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   const { myEmail, subject, message } = formInfo;
+  //   const mailtoURL = `mailto:${myEmail}?subject=${encodeURIComponent(
+  //     subject
+  //   )}&body=${encodeURIComponent(message)}}`;
+
+  //   setMailToUrl(mailtoURL);
+  // };
 
   return (
     <section className='contact' id='contact'>
@@ -31,41 +35,38 @@ const Contact = () => {
           <Col md={6}>
             <img src={contactImg} alt={`Let's connect!`} />
           </Col>
-          <Col>
-            <h2 className='get-in-touch'>Get in Touch</h2>
+          <Col className='get-in-touch'>
+            <h2>Get in Touch</h2>
             <img src={contactLogo} alt='logo' className='contact-logo' />
-            {/* <Form onSubmit={handleSubmit}>
+            <a href={mailToUrl}>
+              <button type='submit' className='contact-send-button'>
+                Email Me
+              </button>
+            </a>
+            {/* <Form onSubmit={handleSubmit} className='contact-form'>
               <Row>
-                <Form.Group as={Col} className='px-2'>
-                  <Form.Label>First Name</Form.Label>
+                <Form.Group as={Col} className='px-2 contact-form-label'>
+                  <Form.Label>Email</Form.Label>
                   <Form.Control
-                    type='text'
-                    name='firstName'
-                    value={formInfo.firstName}
-                    placeholder='First Name'
-                    onChange={(e) => onFormUpdate('firstName', e.target.value)}
-                  ></Form.Control>
-                </Form.Group>
-                <Form.Group as={Col} className='px-2'>
-                  <Form.Label>Last Name</Form.Label>
-                  <Form.Control
-                    type='text'
-                    name='lastName'
-                    value={formInfo.lastName}
-                    placeholder='Last Name'
-                    onChange={(e) => onFormUpdate('lastName', e.target.value)}
+                    type='email'
+                    name='senderEmail'
+                    value={formInfo.senderEmail}
+                    placeholder='Email'
+                    onChange={(e) =>
+                      onFormUpdate('senderEmail', e.target.value)
+                    }
                   ></Form.Control>
                 </Form.Group>
               </Row>
               <Row>
-                <Form.Group as={Col} className='px-2'>
-                  <Form.Label>Email</Form.Label>
+                <Form.Group as={Col} className='px-2 contact-form-label'>
+                  <Form.Label>Subject</Form.Label>
                   <Form.Control
-                    type='email'
-                    name='email'
-                    value={formInfo.email}
-                    placeholder='Email'
-                    onChange={(e) => onFormUpdate('email', e.target.value)}
+                    type='text'
+                    name='subject'
+                    value={formInfo.subject}
+                    placeholder='Subject'
+                    onChange={(e) => onFormUpdate('subject', e.target.value)}
                   ></Form.Control>
                 </Form.Group>
               </Row>
@@ -78,11 +79,10 @@ const Contact = () => {
                   style={{ height: '100px' }}
                   onChange={(e) => onFormUpdate('message', e.target.value)}
                 ></Form.Control>
-                <p className={status.success === false ? 'danger' : 'success'}>
-                  {status.message}
-                </p>
               </Row>
-              <Button type='submit'>{buttonText}</Button>
+              <button type='submit' className='contact-send-button'>
+                <a href={mailToUrl}>Send</a>
+              </button>
             </Form> */}
           </Col>
         </Row>

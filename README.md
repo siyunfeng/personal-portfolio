@@ -18,3 +18,6 @@ Website Title Icon
 Profile Sticker
 <a href="https://www.flaticon.com/free-stickers/profile" title="profile stickers">Profile stickers created by Stickers - Flaticon</a>
 <a href="https://www.flaticon.com/free-stickers/girl" title="girl stickers">Girl stickers created by Stickers - Flaticon</a>
+
+Navbar Icon
+<a href="https://www.flaticon.com/free-icons/mail" title="mail icons">Mail icons created by Freepik - Flaticon</a>

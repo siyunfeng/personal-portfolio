@@ -1,13 +1,13 @@
 import { Col, Container, Row } from 'react-bootstrap';
 import navLinkedIn from '../assets/img/nav-linkedin.svg';
 import navGitHub from '../assets/img/nav-github.png';
-import navGmail from '../assets/img/nav-icon3.svg';
+import navGmail from '../assets/img/nav-email.png';
 
 const Footer = () => {
   return (
     <footer className='footer'>
       <Container>
-        <Row className='align-items-center'>
+        <Row className='align-items-center footer-box'>
           <Col>
             <div className='social-icon'>
               <a href='https://www.linkedin.com/in/siyunfeng/'>
@@ -16,10 +16,13 @@ const Footer = () => {
               <a href='https://github.com/siyunfeng'>
                 <img src={navGitHub} alt='My GitHub' />
               </a>
-              <a href='#'>
+              <a href='mailto:siyunf21@gmail.com'>
                 <img src={navGmail} alt='My Email' />
               </a>
             </div>
+          </Col>
+          <Col>
+            <p className='copy-right'>© 2023 Siyun Feng</p>
           </Col>
         </Row>
       </Container>
