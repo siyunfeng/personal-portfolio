@@ -9,8 +9,12 @@ const ProjectCard = ({ title, description, imgUrl, githubUrl, websiteUrl }) => {
           <h4>{title}</h4>
           <span>{description}</span>
           <div className='proj-link-box'>
-            <a href={githubUrl}>GitHub</a>
-            <a href={websiteUrl}>Website</a>
+            <a href={githubUrl} target={`_blank`}>
+              GitHub
+            </a>
+            <a href={websiteUrl} target={`_blank`}>
+              Website
+            </a>
           </div>
         </div>
       </div>

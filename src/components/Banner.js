@@ -16,7 +16,7 @@ const Banner = () => {
               service experience allowed me to develop excellent communication,
               interpersonal, and problem-solving skills.
             </p>
-            <a href='https://www.linkedin.com/in/siyunfeng/'>
+            <a href='https://www.linkedin.com/in/siyunfeng/' target={`_blank`}>
               <button className='banner-connect-button'>Let's connect</button>
             </a>
           </Col>

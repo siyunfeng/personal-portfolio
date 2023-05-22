@@ -59,13 +59,16 @@ const NavBar = () => {
           </Nav>
           <span className='navbar-text'>
             <div className='social-icon'>
-              <a href='https://www.linkedin.com/in/siyunfeng/'>
+              <a
+                href='https://www.linkedin.com/in/siyunfeng/'
+                target={`_blank`}
+              >
                 <img src={navLinkedIn} alt='My LinkedIn' />
               </a>
-              <a href='https://github.com/siyunfeng'>
+              <a href='https://github.com/siyunfeng' target={`_blank`}>
                 <img src={navGitHub} alt='My GitHub' />
               </a>
-              <a href='mailto:siyunf21@gmail.com'>
+              <a href='mailto:siyunf21@gmail.com' target={`_blank`}>
                 <img src={navGmail} alt='My Email' />
               </a>
             </div>

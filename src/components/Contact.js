@@ -38,7 +38,7 @@ const Contact = () => {
           <Col className='get-in-touch'>
             <h2>Get in Touch</h2>
             <img src={contactLogo} alt='logo' className='contact-logo' />
-            <a href={mailToUrl}>
+            <a href={mailToUrl} target={`_blank`}>
               <button type='submit' className='contact-send-button'>
                 Email Me
               </button>
