@@ -21,3 +21,6 @@ Profile Sticker
 
 Navbar Icon
 <a href="https://www.flaticon.com/free-icons/mail" title="mail icons">Mail icons created by Freepik - Flaticon</a>
+
+Back to Top Button
+<a href="https://www.flaticon.com/free-icons/arrowhead" title="arrowhead icons">Arrowhead icons created by HJ Studio - Flaticon</a>

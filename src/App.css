@@ -28,6 +28,20 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Alegreya', serif !important;
 }
 
+#top-button {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background: none;
+  border: none;
+}
+
+#top-button img{
+  width: 3.5rem;
+  margin: 1.5rem;
+}
+
 /* NavBar */
 
 #basic-navbar-nav {
