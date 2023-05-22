@@ -5,7 +5,7 @@ import navLinkedIn from '../assets/img/nav-linkedin.svg';
 import navGitHub from '../assets/img/nav-github.png';
 import navGmail from '../assets/img/nav-email.png';
 
-const navLinkNames = ['home', 'skills', 'projects'];
+const navLinkNames = ['home', 'skills', 'projects', 'contact'];
 
 const NavBar = () => {
   const [activeLink, setActiveLink] = useState('home');
