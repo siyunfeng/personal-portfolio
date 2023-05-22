@@ -38,13 +38,13 @@ const Projects = () => {
       githubUrl: 'https://github.com/siyunfeng/guess-my-number',
       websiteUrl: 'https://guess-siyun-number.onrender.com/',
     },
-    {
-      title: 'Pig Game',
-      description: ``,
-      imgUrl: '',
-      githubUrl: '',
-      websiteUrl: '',
-    },
+    // {
+    //   title: 'Pig Game',
+    //   description: ``,
+    //   imgUrl: '',
+    //   githubUrl: '',
+    //   websiteUrl: '',
+    // },
   ];
 
   return (
