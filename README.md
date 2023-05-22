@@ -23,4 +23,4 @@ Navbar Icon
 <a href="https://www.flaticon.com/free-icons/mail" title="mail icons">Mail icons created by Freepik - Flaticon</a>
 
 Back to Top Button
-<a href="https://www.flaticon.com/free-icons/arrowhead" title="arrowhead icons">Arrowhead icons created by HJ Studio - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/top" title="top icons">Top icons created by th studio - Flaticon</a>
