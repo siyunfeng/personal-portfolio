@@ -51,13 +51,13 @@ const NavBar = () => {
           <img src={logo} alt='logo' id='logo' />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls='basic-navbar-nav'>
-          <span className='navbar-toggler-icon'> </span>
+          <span className='navbar-toggler-icon'></span>
         </Navbar.Toggle>
         <Navbar.Collapse id='basic-navbar-nav'>
           <Nav className='me-auto'>
             {navLinkNames.map((navLinkName) => navLinks(navLinkName))}
           </Nav>
-          <span className='navbar-text'>
+          <Nav className='navbar-text'>
             <div className='social-icon'>
               <a
                 href='https://www.linkedin.com/in/siyunfeng/'
@@ -72,7 +72,7 @@ const NavBar = () => {
                 <img src={navGmail} alt='My Email' />
               </a>
             </div>
-          </span>
+          </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
