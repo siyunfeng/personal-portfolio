@@ -189,9 +189,9 @@ nav.navbar .navbar-toggler-icon {
   height: 17px;
   background-image: none;
   position: relative;
+  top: -2px;
   border-bottom: 2px solid #fff;
   transition: all 300ms linear;
-  top: -2px;
 }
 nav.navbar .navbar-toggler-icon:focus {
 	border-bottom: 2px solid #fff;
@@ -231,7 +231,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     position: fixed;
     width: 100%;
     height: 100%;
-    top: 0;
     z-index: 100;
     transition:  0.32s ease-in-out;
     align-content: flex-start;
@@ -291,7 +290,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: left;
 }
 
-.banner-connect-button, .contact-send-button {
+.banner-connect-button, .contact-send-button, .proj-details-button {
   font-family: 'Fjalla One', 'Yeseva One', sans-serif;
   font-size: larger;
   padding: 0.5rem 2rem;
@@ -300,13 +299,23 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
 }
 
-.banner-connect-button:hover,  .contact-send-button:hover {
+.proj-details-button {
+  font-family: 'Fjalla One', 'Yeseva One', sans-serif;
+  font-size: medium;
+  padding: 0.2rem 1rem;
+  margin-top: 0.5rem;
+  transform: translateY(calc(var(--y, 0) * 1%)) scale(var(--scale));
+  transition: transform 0.1s;
+  position: relative;
+}
+
+.banner-connect-button:hover,  .contact-send-button:hover, .proj-details-button:hover {
   --y: -10;
   --scale: 1.1;
   --border-scale: 1;
 }
 
-.banner-connect-button:active,  .contact-send-button:active {
+.banner-connect-button:active,  .contact-send-button:active, .proj-details-button:active {
   --y: 5%;
   --scale: 0.9;
   --border-scale: 0.9, 0.8;
@@ -516,8 +525,12 @@ div .tech-name {
   z-index: -4;
 }
 
-.proj-link-box a {
-  padding: 10px;
+.proj-link-box a{
+  margin: 1rem;
+}
+
+.btn-proj-details {
+
 }
 
 .proj-coming-soon {
