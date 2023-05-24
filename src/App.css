@@ -460,8 +460,15 @@ div .tech-name {
   border-radius: 0 55px 55px 0;
 }
 
+.each-project-card {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 2em;
+}
+
 .proj-imgbx {
   display: flex;
+  /* flex: 1 1 2em; */
   justify-content: center;
   position: relative;
   height: 250px;

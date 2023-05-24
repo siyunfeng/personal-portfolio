@@ -17,7 +17,9 @@ const ProjectCard = ({ title, description, imgUrl, githubUrl, websiteUrl }) => {
             </a>
           </div>
           <div className='proj-details'>
-            <button className='proj-details-button'>More Details</button>
+            <a href='ProjectDetailCard.js'>
+              <button className='proj-details-button'>More Details</button>
+            </a>
           </div>
         </div>
       </div>
