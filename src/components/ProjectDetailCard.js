@@ -1,35 +1,45 @@
+import { connect } from 'react-redux';
+
 const ProjectDetailCard = (props) => {
+  const { projects } = props;
+  const projectTitle = props.match.params.title;
+
+  const project = projects.filter(
+    (project) => project.title === projectTitle
+  )[0];
+  const { title, description, imgUrl, githubUrl, websiteUrl } = project;
+  console.log('project =', title, description, githubUrl, websiteUrl);
+
   return (
     <>
       <section className='intro' id='project_intro'>
         <h1 className='section__title section__title--intro'>
-          <strong>Project Title</strong>
+          <strong>{title}</strong>
         </h1>
         <p className='section__subtitle section__subtitle--intro'>Subtitle</p>
-        <img
-          src='img/coins.jpeg'
-          alt=''
-          className='intro__img'
-          id='DSLD_img'
-          style={{ background: 'black' }}
-        />
+        <img src={imgUrl} alt={title} className='intro__img' />
       </section>
       <div className='portfolio-button-container'>
         <a
-          href='#home'
+          href={websiteUrl}
           className='btn'
           target='_blank'
           rel='noopener noreferrer'
         >
-          {`Try it here (Wesite)`}
+          Try it
         </a>
-        <a href='#o' className='btn' target='_blank' rel='noopener noreferrer'>
+        <a
+          href={githubUrl}
+          className='btn'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
           Github
         </a>
       </div>
 
       <div className='portfolio-item-individual'>
-        <p>Application Description</p>
+        <p>{description}</p>
         <img src='img/farhadCoin.png' id='DSLD_gif' alt='' />
         <p>Description: What did I do in this project</p>
       </div>
@@ -52,4 +62,10 @@ const ProjectDetailCard = (props) => {
   );
 };
 
-export default ProjectDetailCard;
+const mapState = (state) => {
+  return {
+    projects: state.projects,
+  };
+};
+
+export default connect(mapState)(ProjectDetailCard);

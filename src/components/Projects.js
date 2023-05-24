@@ -10,7 +10,6 @@ const Projects = (props) => {
   const gameTimeProject = projects.filter(
     (project) => project.type === 'Game Time'
   );
-  console.log('props >>>', props);
 
   return (
     <section className='project' id='projects'>
