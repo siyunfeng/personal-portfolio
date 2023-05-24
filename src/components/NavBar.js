@@ -4,6 +4,7 @@ import logo from '../assets/img/logo3.png';
 import navLinkedIn from '../assets/img/nav-linkedin.svg';
 import navGitHub from '../assets/img/nav-github.png';
 import navGmail from '../assets/img/nav-email.png';
+import { Link } from 'react-router-dom';
 
 const navLinkNames = ['home', 'skills', 'projects', 'contact'];
 
@@ -32,22 +33,22 @@ const NavBar = () => {
     const linkName = navLink.charAt(0).toUpperCase() + navLink.slice(1);
 
     return (
-      <Nav.Link
-        href={`#${navLink}`}
+      <Link
+        to={linkName === 'home' ? '/' : `/${navLink}`}
         className={
           activeLink === navLink ? 'active navbar-link' : 'navbar-link'
         }
         onClick={() => updateActiveLink(navLink)}
       >
         {linkName}
-      </Nav.Link>
+      </Link>
     );
   };
 
   return (
     <Navbar expand='lg' className={scrolled ? 'scrolled' : ''}>
       <Container>
-        <Navbar.Brand href='#home'>
+        <Navbar.Brand>
           <img src={logo} alt='logo' id='logo' />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls='basic-navbar-nav'>

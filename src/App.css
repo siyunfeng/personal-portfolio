@@ -44,6 +44,26 @@ h1, h2, h3, h4, h5, h6 {
 
 /* NavBar */
 
+a.navbar-link:link { 
+  text-decoration: none; 
+  color: inherit;
+}
+
+a.navbar-link:visited {  
+  text-decoration: none; 
+  color: inherit;
+}
+
+a.navbar-link:hover { 
+  text-decoration: none; 
+  color: inherit;
+}
+
+a.navbar-link:active { 
+  text-decoration: none; 
+  color: inherit;
+}
+
 #basic-navbar-nav {
   font-family: 'Cherry Swash', Arial, sans-serif;
 }
@@ -64,7 +84,7 @@ nav.navbar.scrolled {
 nav.navbar a.navbar-brand {
     width: 9%;
 }
-nav.navbar .navbar-nav .nav-link.navbar-link {
+nav.navbar .navbar-nav a.navbar-link {
   font-weight: 400;
   color: #fff !important;
   letter-spacing: 0.8px;
@@ -73,8 +93,8 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   opacity: 0.75;
   transition: transform 0.2s;
 }
-nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
-nav.navbar .navbar-nav a.nav-link.navbar-link.active {
+nav.navbar .navbar-nav a.navbar-link:hover,
+nav.navbar .navbar-nav a.navbar-link.active {
     opacity: 1;
     transform: scale(1.1);
 }
@@ -534,10 +554,6 @@ div .tech-name {
 
 .proj-link-box a{
   margin: 1rem;
-}
-
-.btn-proj-details {
-
 }
 
 .proj-coming-soon {
