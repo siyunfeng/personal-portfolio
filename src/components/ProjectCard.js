@@ -1,8 +1,8 @@
 import { Col } from 'react-bootstrap';
-import ProjectDetailCard from './ProjectDetailCard';
 import { Link } from 'react-router-dom';
 
-const ProjectCard = ({ title, description, imgUrl, githubUrl, websiteUrl }) => {
+const ProjectCard = (props) => {
+  const { title, description, imgUrl, githubUrl, websiteUrl } = props;
   return (
     <Col sm={6} md={4}>
       <div className='proj-imgbx'>

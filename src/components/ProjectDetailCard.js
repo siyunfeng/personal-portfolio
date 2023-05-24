@@ -1,4 +1,4 @@
-const ProjectDetailCard = () => {
+const ProjectDetailCard = (props) => {
   return (
     <>
       <section className='intro' id='project_intro'>

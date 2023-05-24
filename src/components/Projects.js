@@ -3,7 +3,13 @@ import ProjectCard from './ProjectCard';
 import { connect } from 'react-redux';
 
 const Projects = (props) => {
-  const { ghProject, gameTimeProject } = props;
+  const { projects } = props;
+  const ghProject = projects.filter(
+    (project) => project.type === 'Grace Hopper'
+  );
+  const gameTimeProject = projects.filter(
+    (project) => project.type === 'Game Time'
+  );
   console.log('props >>>', props);
 
   return (
@@ -62,8 +68,7 @@ const Projects = (props) => {
 
 const mapState = (state) => {
   return {
-    ghProject: state.ghProject,
-    gameTimeProject: state.gameTimeProject,
+    projects: state.projects,
   };
 };
 

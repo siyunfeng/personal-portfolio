@@ -4,13 +4,14 @@ import theGraceBritishBakeOff from '../assets/img/the-grace-british-bake-off.png
 import guessSiyunNumber from '../assets/img/guess-siyun-number.png';
 
 const initialState = {
-  ghProject: [
+  projects: [
     {
       title: 'Vintager',
       description: `This solo project is a blog about vintage fashion built using Next.js. Data is stored in Hygraph and queried using GraphQL. Visitors can submit comments which need to be approved by the admin before they are visible.`,
       imgUrl: vintagerImg,
       githubUrl: 'https://github.com/siyunfeng/vintage_blog',
       websiteUrl: 'https://vintager.onrender.com/',
+      type: 'Grace Hopper',
     },
     {
       title: 'The Grace British Bake Off',
@@ -18,6 +19,7 @@ const initialState = {
       imgUrl: theGraceBritishBakeOff,
       githubUrl: 'https://github.com/siyunfeng/The-Grace-British-Bake-Off',
       websiteUrl: 'https://grace-shopper-e.onrender.com/',
+      type: 'Grace Hopper',
     },
     {
       title: 'PartyPal',
@@ -25,15 +27,15 @@ const initialState = {
       imgUrl: partypalImg,
       githubUrl: 'https://github.com/siyunfeng/PartyPal',
       websiteUrl: 'https://partypal.onrender.com/',
+      type: 'Grace Hopper',
     },
-  ],
-  gameTimeProject: [
     {
       title: `Guess Siyun's Number`,
       description: `A small guessing game I converted from a plain HTML, CSS and JavaScript project into React version. `,
       imgUrl: guessSiyunNumber,
       githubUrl: 'https://github.com/siyunfeng/guess-my-number',
       websiteUrl: 'https://guess-siyun-number.onrender.com/',
+      type: 'Game Time',
     },
   ],
 };
