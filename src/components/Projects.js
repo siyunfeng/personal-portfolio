@@ -16,8 +16,8 @@ const Projects = (props) => {
             <Tab.Container id='projects-tabs' defaultActiveKey='first'>
               <Nav
                 variant='pills'
-                className='nav-pills mb-5 justify-content-center align-items-center'
                 id='pills-tab'
+                className='nav-pills mb-5 justify-content-center align-items-center'
               >
                 <Nav.Item>
                   <Nav.Link eventKey='first'>Boot Camp</Nav.Link>
