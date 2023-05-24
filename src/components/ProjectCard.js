@@ -1,5 +1,6 @@
 import { Col } from 'react-bootstrap';
 import ProjectDetailCard from './ProjectDetailCard';
+import { Link } from 'react-router-dom';
 
 const ProjectCard = ({ title, description, imgUrl, githubUrl, websiteUrl }) => {
   return (
@@ -17,9 +18,11 @@ const ProjectCard = ({ title, description, imgUrl, githubUrl, websiteUrl }) => {
               GitHub
             </a>
           </div>
-          <div className='proj-details'>
-            <button className='proj-details-button'>More Details</button>
-          </div>
+          <Link to={`/projects/${title}`}>
+            <div className='proj-details'>
+              <button className='proj-details-button'>More Details</button>
+            </div>
+          </Link>
         </div>
       </div>
     </Col>
