@@ -1,4 +1,5 @@
 import { Col } from 'react-bootstrap';
+import ProjectDetailCard from './ProjectDetailCard';
 
 const ProjectCard = ({ title, description, imgUrl, githubUrl, websiteUrl }) => {
   return (
@@ -17,7 +18,7 @@ const ProjectCard = ({ title, description, imgUrl, githubUrl, websiteUrl }) => {
             </a>
           </div>
           <div className='proj-details'>
-            <a href='ProjectDetailCard.js'>
+            <a href={ProjectDetailCard}>
               <button className='proj-details-button'>More Details</button>
             </a>
           </div>
