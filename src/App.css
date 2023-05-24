@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  background-color: #282c34 !important; /* important declaration (preferred) */
+  background-color: rgba(100, 64, 39, 0.487) !important; /* important declaration (preferred) */
   color: white !important;
   position: relative;
   font-family: 'Ubuntu', 'Alegreya', serif, sans-serif !important;
