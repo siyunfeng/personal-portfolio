@@ -34,7 +34,7 @@ const NavBar = () => {
 
     return (
       <Link
-        to={linkName === 'home' ? '/' : `/${navLink}`}
+        to={`/${navLink}`}
         className={
           activeLink === navLink ? 'active navbar-link' : 'navbar-link'
         }
