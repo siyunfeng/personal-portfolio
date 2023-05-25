@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Container, Row, Col, Form } from 'react-bootstrap';
 import contactImg from '../assets/img/work-from-home-1.png';
 import contactLogo from '../assets/img/logo3.png';
+import { mailtoURL } from '../helperFunctions';
 
 const Contact = () => {
   // const initialFormInfo = {
@@ -21,11 +22,8 @@ const Contact = () => {
   // const handleSubmit = (e) => {
   //   e.preventDefault();
   //   const { myEmail, subject, message } = formInfo;
-  //   const mailtoURL = `mailto:${myEmail}?subject=${encodeURIComponent(
-  //     subject
-  //   )}&body=${encodeURIComponent(message)}}`;
 
-  //   setMailToUrl(mailtoURL);
+  //   setMailToUrl(mailtoURL{ myEmail, subject, message });
   // };
 
   return (

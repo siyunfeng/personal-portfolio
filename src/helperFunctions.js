@@ -13,3 +13,9 @@ export const scrollToTop = () => {
     behavior: 'smooth',
   });
 };
+
+export const mailtoURL = ({ myEmail, subject, message }) => {
+  return `mailto:${myEmail}?subject=${encodeURIComponent(
+    subject
+  )}&body=${encodeURIComponent(message)}}`;
+};
