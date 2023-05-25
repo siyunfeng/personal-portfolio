@@ -7,9 +7,17 @@ const ProjectDetailCard = (props) => {
   const project = projects.filter(
     (project) => project.title === projectTitle
   )[0];
-  const { title, logo, imgUrl, intro, githubUrl, websiteUrl, soloIntro } =
-    project;
-  console.log('project =', title, intro, githubUrl, websiteUrl);
+  const {
+    title,
+    logo,
+    imgUrl,
+    githubUrl,
+    websiteUrl,
+    technologies,
+    intro,
+    soloIntro,
+  } = project;
+  // console.log('project =', title, intro, githubUrl, websiteUrl);
 
   return (
     <>
@@ -47,16 +55,17 @@ const ProjectDetailCard = (props) => {
 
       <section className='tech-stack' id='tech-stack'>
         <h3 className='section__title section__title--tech'>Tech Stack</h3>
-
-        <div className='tech'>
-          <div className='tech_item'>
-            TypeScript
-            <span
-              className='iconify'
-              data-icon='logos:typescript-icon'
-              data-inline='false'
-            ></span>
-          </div>
+        <div className='skills-list'>
+          {technologies.map((tech, index) => {
+            return (
+              <div className='each-skill' key={index}>
+                <div className='tech-icon'>
+                  <img src={tech.techIcon} alt={tech.techName} />
+                </div>
+                <div className='tech-name'>{tech.techName}</div>
+              </div>
+            );
+          })}
         </div>
       </section>
     </>
