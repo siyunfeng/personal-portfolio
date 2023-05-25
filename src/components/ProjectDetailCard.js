@@ -7,8 +7,9 @@ const ProjectDetailCard = (props) => {
   const project = projects.filter(
     (project) => project.title === projectTitle
   )[0];
-  const { title, description, imgUrl, githubUrl, websiteUrl } = project;
-  console.log('project =', title, description, githubUrl, websiteUrl);
+  const { title, logo, imgUrl, intro, githubUrl, websiteUrl, soloIntro } =
+    project;
+  console.log('project =', title, intro, githubUrl, websiteUrl);
 
   return (
     <>
@@ -17,7 +18,7 @@ const ProjectDetailCard = (props) => {
           <strong>{title}</strong>
         </h1>
         <p className='section__subtitle section__subtitle--intro'>Subtitle</p>
-        <img src={imgUrl} alt={title} className='intro__img' />
+        <img src={logo} alt={title} className='intro__img' />
       </section>
       <div className='portfolio-button-container'>
         <a
@@ -39,9 +40,9 @@ const ProjectDetailCard = (props) => {
       </div>
 
       <div className='portfolio-item-individual'>
-        <p>{description}</p>
+        <p>{intro}</p>
         <img src='img/farhadCoin.png' id='DSLD_gif' alt='' />
-        <p>Description: What did I do in this project</p>
+        <p>{soloIntro}</p>
       </div>
 
       <section className='tech-stack' id='tech-stack'>

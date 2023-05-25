@@ -4,6 +4,11 @@ import partypalImg from '../assets/img/partypalImg.png';
 import theGraceBritishBakeOff from '../assets/img/the-grace-british-bake-off.png';
 import guessSiyunNumber from '../assets/img/guess-siyun-number.png';
 
+// Project Logos
+import logoVintager from '../assets/img/logo-Vintager.png';
+import logoTheGraceBritishBakeOff from '../assets/img/logo-the-grace-british-bake-off.png';
+import logoPartyPal from '../assets/img/logo-PartyPal.png';
+
 // Technologies Icons
 import javascript from '../assets/icons/javascript.svg';
 import nodeJS from '../assets/icons/nodejs.svg';
@@ -21,40 +26,149 @@ import reactbootstrap from '../assets/icons/reactbootstrap.svg';
 import styledComponents from '../assets/icons/styledcomponents.svg';
 import onRender from '../assets/icons/render.svg';
 import tailwindCSS from '../assets/icons/tailwindcss.svg';
+import momentJS from '../assets/icons/momentjs.svg';
+import graphQL from '../assets/icons/graphql.svg';
+import hygraph from '../assets/icons/hygraph.webp';
+import sass from '../assets/icons/sass.svg';
+import nextJS from '../assets/icons/nextjs.svg';
 
 const initialState = {
   projects: [
     {
+      type: 'Grace Hopper',
       title: 'Vintager',
-      description: `This solo project is a blog about vintage fashion built using Next.js. Data is stored in Hygraph and queried using GraphQL. Visitors can submit comments which need to be approved by the admin before they are visible.`,
+      logo: logoVintager,
       imgUrl: vintagerImg,
       githubUrl: 'https://github.com/siyunfeng/vintage_blog',
       websiteUrl: 'https://vintager.onrender.com/',
-      type: 'Grace Hopper',
+      techName: [
+        'JavaScript',
+        'NodeJS',
+        'React',
+        'NextJS',
+        'GraphQL',
+        'Hygraph',
+        'Tailwind CSS',
+        'Sass',
+        'MomentJS',
+        'HTML5',
+        'CSS3',
+        'WebPack',
+        'Git',
+        'Render',
+      ],
+      techIcon: [
+        javascript,
+        nodeJS,
+        reactJS,
+        nextJS,
+        graphQL,
+        hygraph,
+        tailwindCSS,
+        sass,
+        momentJS,
+        html5,
+        css3,
+        webpack,
+        git,
+        onRender,
+      ],
+      intro: `This solo project is a blog about vintage fashion built using Next.js. Data is stored in Hygraph and queried using GraphQL. Visitors can submit comments which need to be approved by the admin before they are visible. `,
     },
     {
+      type: 'Grace Hopper',
       title: 'The Grace British Bake Off',
-      description: `PartyPal is an application where you can find a curated list of highly rated caterer and venue recommendations based on location for your next party!`,
+      logo: logoTheGraceBritishBakeOff,
       imgUrl: theGraceBritishBakeOff,
       githubUrl: 'https://github.com/siyunfeng/The-Grace-British-Bake-Off',
       websiteUrl: 'https://grace-shopper-e.onrender.com/',
-      type: 'Grace Hopper',
+      techName: [
+        'JavaScript',
+        'NodeJS',
+        'React',
+        'Redux',
+        'Express',
+        'Sequelize',
+        'PostgreSQL',
+        'HTML5',
+        'CSS3',
+        'WebPack',
+        'Git',
+        'Render',
+      ],
+      techIcon: [
+        javascript,
+        nodeJS,
+        reactJS,
+        reduxJS,
+        express,
+        sequelize,
+        postgreSQL,
+        html5,
+        css3,
+        webpack,
+        git,
+        onRender,
+      ],
+      intro: `E-commerce site selling baked goods. Our pastries are based on our favorite bakery show 'The Great British Bake Off'. `,
+      soloIntro: `I was responsible for styling the website, creating the single product and cart React components, and transitioning the guest cart state from local storage to the Redux store. `,
     },
     {
+      type: 'Grace Hopper',
       title: 'PartyPal',
-      description: `E-commerce site selling baked goods. I was responsible for styling the website, creating the single product and cart React components, and transitioning the guest cart state from local storage to the Redux store.`,
+      logo: logoPartyPal,
       imgUrl: partypalImg,
       githubUrl: 'https://github.com/siyunfeng/PartyPal',
       websiteUrl: 'https://partypal.onrender.com/',
-      type: 'Grace Hopper',
+      techName: [
+        'JavaScript',
+        'NodeJS',
+        'React',
+        'Redux',
+        'Express',
+        'Sequelize',
+        'PostgreSQL',
+        'GraphQL',
+        'HTML5',
+        'CSS3',
+        'Material-UI',
+        'React-Bootstrap',
+        'Styled-Components',
+        'MomentJS',
+        'WebPack',
+        'Git',
+        'Render',
+      ],
+      techIcon: [
+        javascript,
+        nodeJS,
+        reactJS,
+        reduxJS,
+        express,
+        sequelize,
+        postgreSQL,
+        graphQL,
+        html5,
+        css3,
+        materialUI,
+        reactbootstrap,
+        styledComponents,
+        momentJS,
+        webpack,
+        git,
+        onRender,
+      ],
+      intro: `PartyPal is an application where you can find a curated list of highly rated caterer and venue recommendations based on location for your next party! `,
     },
     {
+      type: 'Game Time',
       title: `Guess Siyun's Number`,
-      description: `A small guessing game I converted from a plain HTML, CSS and JavaScript project into React version. `,
       imgUrl: guessSiyunNumber,
       githubUrl: 'https://github.com/siyunfeng/guess-my-number',
       websiteUrl: 'https://guess-siyun-number.onrender.com/',
-      type: 'Game Time',
+      techName: [],
+      techIcon: [],
+      intro: `A small guessing game I converted from a plain HTML, CSS and JavaScript project into React version. `,
     },
   ],
   technologies: [
@@ -70,9 +184,14 @@ const initialState = {
     { techName: 'Git', techIcon: git },
     { techName: 'Webpack', techIcon: webpack },
     { techName: 'Render', techIcon: onRender },
-    { techName: 'Material UI', techIcon: materialUI },
-    { techName: 'React Bootstrap', techIcon: reactbootstrap },
+    { techName: 'NextJS', techIcon: nextJS },
+    { techName: 'GraphQL', techIcon: graphQL },
+    { techName: 'Hygraph', techIcon: hygraph },
+    { techName: 'MomentJS', techIcon: momentJS },
+    { techName: 'Material-UI', techIcon: materialUI },
+    { techName: 'React-Bootstrap', techIcon: reactbootstrap },
     { techName: 'Tailwind CSS', techIcon: tailwindCSS },
+    { techName: 'Sass', techIcon: sass },
     { techName: 'Styled-Components', techIcon: styledComponents },
   ],
 };
