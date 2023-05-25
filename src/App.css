@@ -69,11 +69,11 @@ a.navbar-link:active {
 }
 
 nav.navbar {
-  padding: 18px 0;
-  position: fixed;
+  padding: 0.5rem 0;
+  position: sticky;
   width: 100%;
   top: 0;
-  z-index: 9999;
+  z-index: 100;
   transition:  0.32s ease-in-out;
   background-color: rgba(100, 64, 39, 0.487);
 }
@@ -589,7 +589,7 @@ div .tech-name {
   .intro {
     display: grid;
     width: min-content;
-    margin: 0 auto;
+    margin: 0 auto; 
     grid-column-gap: 1em;
     grid-template-areas:
       'img title'
