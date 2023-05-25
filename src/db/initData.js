@@ -8,6 +8,7 @@ import guessSiyunNumber from '../assets/img/guess-siyun-number.png';
 import logoVintager from '../assets/img/logo-Vintager.png';
 import logoTheGraceBritishBakeOff from '../assets/img/logo-the-grace-british-bake-off.png';
 import logoPartyPal from '../assets/img/logo-PartyPal.png';
+import logoGuessMyNumber from '../assets/img/logo-Guess-Siyun-Number.png';
 
 // Technologies Icons
 import javascript from '../assets/icons/javascript.svg';
@@ -38,6 +39,7 @@ const initialState = {
     {
       type: 'Grace Hopper',
       title: 'Vintager',
+      slogan: 'Step into Timeless Elegance at Vintager!',
       logo: logoVintager,
       imgUrl: vintagerImg,
       githubUrl: 'https://github.com/siyunfeng/vintage_blog',
@@ -58,16 +60,17 @@ const initialState = {
         { techName: 'Git', techIcon: git },
         { techName: 'Render', techIcon: onRender },
       ],
-      intro: `This solo project is a blog about vintage fashion built using Next.js. Data is stored in Hygraph and queried using GraphQL. Visitors can submit comments which need to be approved by the admin before they are visible. `,
+      intro: `Vintager is a blog for you to discover timeless pieces that capture the essence of bygone eras. From elegant dresses to charming accessories, embrace the allure of vintage and add a touch of nostalgia to your style. Welcome to the world of Vintager, where fashion history comes alive. `,
+      soloIntro: `This solo project is a blog about vintage fashion built using Next.js. Data is stored in Hygraph and queried using GraphQL. Visitors can submit comments which need to be approved by the admin before they are visible. `,
     },
     {
       type: 'Grace Hopper',
       title: 'The Grace British Bake Off',
+      slogan: 'Delight in Every Bite, a Baking Paradise!',
       logo: logoTheGraceBritishBakeOff,
       imgUrl: theGraceBritishBakeOff,
       githubUrl: 'https://github.com/siyunfeng/The-Grace-British-Bake-Off',
       websiteUrl: 'https://grace-shopper-e.onrender.com/',
-
       technologies: [
         { techName: 'JavaScript', techIcon: javascript },
         { techName: 'NodeJS', techIcon: nodeJS },
@@ -82,12 +85,13 @@ const initialState = {
         { techName: 'Git', techIcon: git },
         { techName: 'Render', techIcon: onRender },
       ],
-      intro: `E-commerce site selling baked goods. Our pastries are based on our favorite bakery show 'The Great British Bake Off'. `,
+      intro: `The Grace British Bake Off is an e-commerce site selling baked goods. Our pastries are based on our favorite bakery show 'The Great British Bake Off'. `,
       soloIntro: `I was responsible for styling the website, creating the single product and cart React components, and transitioning the guest cart state from local storage to the Redux store. `,
     },
     {
       type: 'Grace Hopper',
       title: 'PartyPal',
+      slogan: 'Plan your party with PartyPal',
       logo: logoPartyPal,
       imgUrl: partypalImg,
       githubUrl: 'https://github.com/siyunfeng/PartyPal',
@@ -117,12 +121,21 @@ const initialState = {
     {
       type: 'Game Time',
       title: `Guess Siyun's Number`,
+      slogan: `Unlock the Mystery, Guess Siyun's Number!`,
+      logo: logoGuessMyNumber,
       imgUrl: guessSiyunNumber,
       githubUrl: 'https://github.com/siyunfeng/guess-my-number',
       websiteUrl: 'https://guess-siyun-number.onrender.com/',
-      techName: [],
-      techIcon: [],
-      intro: `A small guessing game I converted from a plain HTML, CSS and JavaScript project into React version. `,
+      technologies: [
+        { techName: 'JavaScript', techIcon: javascript },
+        { techName: 'NodeJS', techIcon: nodeJS },
+        { techName: 'React', techIcon: reactJS },
+        { techName: 'HTML5', techIcon: html5 },
+        { techName: 'CSS3', techIcon: css3 },
+        { techName: 'Git', techIcon: git },
+        { techName: 'Render', techIcon: onRender },
+      ],
+      intro: `Guess Siyun's Number is a guessing game that allows you to guess the secret number between 1 and 20. You will have 5 chances to guess the secret number`,
     },
   ],
   technologies: [

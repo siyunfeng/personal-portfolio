@@ -488,7 +488,6 @@ div .tech-name {
 
 .proj-imgbx {
   display: flex;
-  /* flex: 1 1 2em; */
   justify-content: center;
   position: relative;
   height: 250px;
@@ -559,6 +558,95 @@ div .tech-name {
 .proj-coming-soon {
   font-family: 'Special Elite', sans-serif;
 }
+
+/* Project Details */
+
+#project_intro {
+  padding: 3em 2em 3em 2em;
+}
+
+.intro {
+  position: relative;
+}
+
+.section__subtitle--intro {
+  background: var(--clr-accent);
+  padding: 0.25em 1em;
+  font-family: var(--ff-secondary);
+  margin-bottom: 1em;
+  color: var(--clr-dark);
+}
+
+.intro__img {
+  box-shadow: var(--bs);
+}
+
+.section__subtitle--intro {
+  display: inline-block;
+}
+
+@media (min-width: 600px) {
+  .intro {
+    display: grid;
+    width: min-content;
+    margin: 0 auto;
+    grid-column-gap: 1em;
+    grid-template-areas:
+      'img title'
+      'img subtitle';
+    grid-template-columns: min-content max-content;
+  }
+
+  .intro__img {
+    grid-area: img;
+    min-width: 250px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .section__subtitle--intro {
+    align-self: start;
+    grid-column: -1/1;
+    grid-row: 2;
+    text-align: right;
+    position: relative;
+    left: -1.5em;
+    width: calc(100% + 1.5em);
+    padding-left: calc(250px + 1em);
+  }
+}
+
+.portfolio-button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio-button-container a {
+  border: 2px var(--clr-dark) solid;
+}
+
+@media (max-width: 600px) {
+  .portfolio-button-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portfolio-button-container .btn {
+    margin: 0;
+  }
+}
+
+.portfolio-button-container .btn {
+  width: 13em;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.portfolio-button-container a + a {
+  margin-left: 2em;
+}
+
+
 
 /* Contact */
 

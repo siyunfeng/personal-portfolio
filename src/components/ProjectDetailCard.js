@@ -9,6 +9,7 @@ const ProjectDetailCard = (props) => {
   )[0];
   const {
     title,
+    slogan,
     logo,
     imgUrl,
     githubUrl,
@@ -25,7 +26,7 @@ const ProjectDetailCard = (props) => {
         <h1 className='section__title section__title--intro'>
           <strong>{title}</strong>
         </h1>
-        <p className='section__subtitle section__subtitle--intro'>Subtitle</p>
+        <p className='section__subtitle section__subtitle--intro'>{slogan}</p>
         <img src={logo} alt={title} className='intro__img' />
       </section>
       <div className='portfolio-button-container'>
@@ -49,7 +50,7 @@ const ProjectDetailCard = (props) => {
 
       <div className='portfolio-item-individual'>
         <p>{intro}</p>
-        <img src='img/farhadCoin.png' id='DSLD_gif' alt='' />
+        <img src='#' alt='' />
         <p>{soloIntro}</p>
       </div>
 
