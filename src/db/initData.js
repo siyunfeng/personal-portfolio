@@ -39,7 +39,7 @@ const initialState = {
     {
       type: 'Grace Hopper',
       title: 'Vintager',
-      slogan: 'Step into Timeless Elegance at Vintager!',
+      slogan: 'Vintager, where fashion history comes alive.',
       logo: logoVintager,
       imgUrl: vintagerImg,
       githubUrl: 'https://github.com/siyunfeng/vintage_blog',
@@ -60,7 +60,7 @@ const initialState = {
         { techName: 'Git', techIcon: git },
         { techName: 'Render', techIcon: onRender },
       ],
-      intro: `Vintager is a blog for you to discover timeless pieces that capture the essence of bygone eras. From elegant dresses to charming accessories, embrace the allure of vintage and add a touch of nostalgia to your style. Welcome to the world of Vintager, where fashion history comes alive. `,
+      intro: `Vintager is a blog for you to discover timeless pieces that capture the essence of bygone eras. From elegant dresses to charming accessories, embrace the allure of vintage and add a touch of nostalgia to your style. `,
       soloIntro: `This solo project is a blog about vintage fashion built using Next.js. Data is stored in Hygraph and queried using GraphQL. Visitors can submit comments which need to be approved by the admin before they are visible. `,
     },
     {

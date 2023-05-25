@@ -24,7 +24,7 @@ const ProjectDetailCard = (props) => {
     <>
       <section className='intro' id='project_intro'>
         <h1 className='section__title section__title--intro'>
-          <strong>{title}</strong>
+          <strong className='title'>{title}</strong>
         </h1>
         <p className='section__subtitle section__subtitle--intro'>{slogan}</p>
         <img src={logo} alt={title} className='intro__img' />
@@ -46,7 +46,7 @@ const ProjectDetailCard = (props) => {
 
       <section className='tech-stack' id='tech-stack'>
         <h3 className='section__title section__title--tech'>Tech Stack</h3>
-        <div className='skills-list tech-stack-list'>
+        <div className='skills-list' id='tech-stack-list'>
           {technologies.map((tech, index) => {
             return (
               <div className='each-skill' key={index}>

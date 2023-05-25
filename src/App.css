@@ -480,6 +480,8 @@ div .tech-name {
   border-radius: 0 55px 55px 0;
 }
 
+/* Project Card */
+
 .each-project-card {
   display: flex;
   flex-wrap: wrap;
@@ -513,7 +515,7 @@ div .tech-name {
 
 .proj-txtx {
   position: absolute;
-  text-align: center;
+  justify-content: center;
   padding: 18px;
   top: 65%;
   left: 50%;
@@ -535,11 +537,13 @@ div .tech-name {
   line-height: 1.1em;
 }
 
-.proj-txtx span {
+.proj-intro {
   font-style: italic;
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 0.8px;
+  display: inline;
+  text-align: left;
 }
 
 .background-image-right {
@@ -563,6 +567,10 @@ div .tech-name {
 
 #project_intro {
   padding: 3em 2em 3em 2em;
+}
+
+#project_intro .title {
+  text-shadow: 2px 2px white;
 }
 
 .intro {
@@ -656,6 +664,14 @@ button.proj-details-button {
   }
 }
 
+#tech-stack-list {
+  padding: 1.5rem 5rem;
+  margin: 1rem 5rem;
+}
+
+#tech-stack-list div.each-skill {
+  width: 135px;
+}
 
 /* Contact */
 

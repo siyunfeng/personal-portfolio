@@ -9,7 +9,7 @@ const ProjectCard = (props) => {
         <img src={imgUrl} alt={title} />
         <div className='proj-txtx'>
           <h4>{title}</h4>
-          <span>{intro}</span>
+          <span className='proj-intro'>{intro}</span>
           <div className='proj-link-box'>
             <a href={websiteUrl} target={`_blank`}>
               Website
