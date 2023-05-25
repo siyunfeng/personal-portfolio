@@ -30,33 +30,23 @@ const ProjectDetailCard = (props) => {
         <img src={logo} alt={title} className='intro__img' />
       </section>
       <div className='portfolio-button-container'>
-        <a
-          href={websiteUrl}
-          className='btn'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          Try it
+        <a href={websiteUrl} target='_blank' rel='noopener noreferrer'>
+          <button className='proj-details-button'>Try it</button>
         </a>
-        <a
-          href={githubUrl}
-          className='btn'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          Github
+        <a href={githubUrl} target='_blank' rel='noopener noreferrer'>
+          <button className='proj-details-button'>GitHub</button>
         </a>
       </div>
 
       <div className='portfolio-item-individual'>
-        <p>{intro}</p>
+        <p className='portfolio-item-intro'>{intro}</p>
         <img src='#' alt='' />
-        <p>{soloIntro}</p>
+        <p className='portfolio-item-intro'>{soloIntro}</p>
       </div>
 
       <section className='tech-stack' id='tech-stack'>
         <h3 className='section__title section__title--tech'>Tech Stack</h3>
-        <div className='skills-list'>
+        <div className='skills-list tech-stack-list'>
           {technologies.map((tech, index) => {
             return (
               <div className='each-skill' key={index}>

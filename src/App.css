@@ -310,7 +310,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: left;
 }
 
-.banner-connect-button, .contact-send-button, .proj-details-button {
+.banner-connect-button, .contact-send-button {
   font-family: 'Fjalla One', 'Yeseva One', sans-serif;
   font-size: larger;
   padding: 0.5rem 2rem;
@@ -372,7 +372,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  align-items: space-evenly;
+  align-items: center;
   padding: 1rem;
   margin: 1rem;
 }
@@ -569,20 +569,25 @@ div .tech-name {
   position: relative;
 }
 
+.section__title {
+  color:rgba(100, 64, 39, 0.924);
+  font-weight: bold;
+}
+
 .section__subtitle--intro {
   background: var(--clr-accent);
   padding: 0.25em 1em;
   font-family: var(--ff-secondary);
   margin-bottom: 1em;
   color: var(--clr-dark);
+  display: inline-block;
+  background-color: rgba(100, 64, 39, 0.487);
 }
 
 .intro__img {
-  box-shadow: var(--bs);
-}
-
-.section__subtitle--intro {
-  display: inline-block;
+  width: 7rem;
+  border-radius: 18%;
+  box-shadow: rgba(198, 150, 121, 0.4) 4px 4px, rgba(198, 150, 121, 0.4) 6px 6px;
 }
 
 @media (min-width: 600px) {
@@ -613,7 +618,21 @@ div .tech-name {
     left: -1.5em;
     width: calc(100% + 1.5em);
     padding-left: calc(250px + 1em);
+    background-color: rgba(100, 64, 39, 0.487);
   }
+}
+
+.portfolio-item-individual {
+  text-align: start;
+  padding: 1.5rem 5rem;
+  margin: 1rem 5rem;
+}
+
+.portfolio-item-intro {
+  background-color: rgba(255, 255, 255, 0.522);
+  color: rgba(100, 64, 39, 0.924);
+  padding: 1rem 2rem;
+  border: 0.3rem solid rgba(255, 255, 255, 0.522);
 }
 
 .portfolio-button-container {
@@ -621,31 +640,21 @@ div .tech-name {
   justify-content: center;
 }
 
-.portfolio-button-container a {
-  border: 2px var(--clr-dark) solid;
+button.proj-details-button {
+  margin: 0 1.5rem;
 }
 
 @media (max-width: 600px) {
+  .portfolio-item-individual {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 2rem;
+  }
+
   .portfolio-button-container {
     flex-direction: column;
     align-items: center;
   }
-
-  .portfolio-button-container .btn {
-    margin: 0;
-  }
 }
-
-.portfolio-button-container .btn {
-  width: 13em;
-  text-align: center;
-  margin-bottom: 2em;
-}
-
-.portfolio-button-container a + a {
-  margin-left: 2em;
-}
-
 
 
 /* Contact */
