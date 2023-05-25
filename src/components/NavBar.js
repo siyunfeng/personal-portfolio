@@ -6,10 +6,10 @@ import navGitHub from '../assets/img/nav-github.png';
 import navGmail from '../assets/img/nav-email.png';
 import { Link } from 'react-router-dom';
 import { onScroll } from '../helperFunctions';
+import { connect } from 'react-redux';
 
-const navLinkNames = ['home', 'skills', 'projects', 'contact'];
-
-const NavBar = () => {
+const NavBar = (props) => {
+  const { navLinkNames } = props;
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
 
@@ -33,6 +33,7 @@ const NavBar = () => {
           activeLink === navLink ? 'active navbar-link' : 'navbar-link'
         }
         onClick={() => updateActiveLink(navLink)}
+        key={navLink}
       >
         {linkName}
       </Link>
@@ -74,4 +75,10 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+const mapState = (state) => {
+  return {
+    navLinkNames: state.navLinkNames,
+  };
+};
+
+export default connect(mapState)(NavBar);
