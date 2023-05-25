@@ -499,6 +499,12 @@ div .tech-name {
   box-shadow: rgba(211, 148, 109, 0.4) 4px 4px, rgba(211, 148, 109, 0.4) 6px 6px;
 }
 
+.proj-imgbx img {
+  width: 500px;
+  margin: auto;
+  object-fit: cover;
+}
+
 .proj-imgbx::before {
   content: "";
   background: linear-gradient(90.21deg, #d38e7dea -5.91%, #e8d19bf4 111.58%);
@@ -561,6 +567,16 @@ div .tech-name {
 
 .proj-coming-soon {
   font-family: 'Special Elite', sans-serif;
+}
+
+@media (max-width: 600px) {
+  .project {
+    padding: 1rem;
+  }
+
+  .proj-imgbx {
+    flex-direction: column;
+  }
 }
 
 /* Project Details */
