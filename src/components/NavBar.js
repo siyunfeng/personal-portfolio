@@ -5,6 +5,7 @@ import navLinkedIn from '../assets/img/nav-linkedin.svg';
 import navGitHub from '../assets/img/nav-github.png';
 import navGmail from '../assets/img/nav-email.png';
 import { Link } from 'react-router-dom';
+import { onScroll } from '../helperFunctions';
 
 const navLinkNames = ['home', 'skills', 'projects', 'contact'];
 
@@ -13,17 +14,10 @@ const NavBar = () => {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
+    window.addEventListener('scroll', onScroll(setScrolled));
 
-    window.addEventListener('scroll', onScroll);
-
-    const removeOnScroll = () => window.removeEventListener('scroll', onScroll);
+    const removeOnScroll = () =>
+      window.removeEventListener('scroll', onScroll(setScrolled));
     return removeOnScroll();
   }, []);
 

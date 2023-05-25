@@ -9,14 +9,14 @@ import TechnicalSkills from './components/TechnicalSkills';
 import { useEffect, useState } from 'react';
 import btnTop from './assets/img/back-to-top.png';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { onTopScroll, scrollToTop } from './helperFunctions';
+import { onScroll, scrollToTop } from './helperFunctions';
 import ProjectDetailCard from './components/ProjectDetailCard';
 
 function App() {
   const [btnTopScrolled, setBtnTopScrolled] = useState(false);
 
   useEffect(() => {
-    return window.addEventListener('scroll', onTopScroll(setBtnTopScrolled));
+    return window.addEventListener('scroll', onScroll(setBtnTopScrolled));
   }, []);
 
   return (

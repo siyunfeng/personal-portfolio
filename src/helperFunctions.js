@@ -1,4 +1,4 @@
-export const onTopScroll = (setFunc) => {
+export const onScroll = (setFunc) => {
   if (window.scrollY > 50) {
     setFunc(true);
   } else {
