@@ -1,6 +1,17 @@
 # Siyun Feng's Portfolio
 
-https://siyun-feng.onrender.com/
+- Portfolio Website: https://siyun-feng.onrender.com/
+- LinkedIn: https://www.linkedin.com/in/siyunfeng/
+
+## Technologies
+
+- JavaScript
+- NodeJS
+- ReactJS
+- ReduxJS
+- React-Bootstrap
+- HTML5
+- CSS3
 
 ### `npm run build`
 
