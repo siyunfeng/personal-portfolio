@@ -1,6 +1,5 @@
-# Siyun Feng's Portfolio
-
 <p id='readme-top'></p>
+# Siyun Feng's Portfolio
 
 - Portfolio Website: https://siyun-feng.onrender.com/
 - LinkedIn: https://www.linkedin.com/in/siyunfeng/
@@ -14,14 +13,6 @@
 - React-Bootstrap
 - HTML5
 - CSS3
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-
-### `npm start`
-
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ## Credits
 
