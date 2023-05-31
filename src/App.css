@@ -281,7 +281,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: rgba(100, 64, 39, 0.924);
   white-space: nowrap;
   overflow: hidden;
-  animation: typing 2.5s steps(40, end), blink 0.6s steps(29, end) infinite;
+  animation: typing 6s steps(40, end) infinite, blink 0.8s steps(29, end) infinite;
   border-right: 5px solid white;
 }
 
@@ -297,6 +297,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .banner h4 {
   color: rgba(100, 64, 39, 0.924);
+  margin: 1rem auto;
 }
 
 .banner p {
@@ -305,8 +306,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 96%;
-  padding: 1rem;
-  margin: 0 1rem 1rem;
+  padding: 0.5rem 1rem;
+  margin: 0 1.5rem;
   text-align: left;
 }
 
@@ -317,6 +318,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transform: translateY(calc(var(--y, 0) * 1%)) scale(var(--scale));
   transition: transform 0.1s;
   position: relative;
+  margin-top: 2rem;
 }
 
 .proj-details-button {
