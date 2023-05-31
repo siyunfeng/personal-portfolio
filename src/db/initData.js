@@ -85,8 +85,8 @@ const initialState = {
         { techName: 'Git', techIcon: git },
         { techName: 'Render', techIcon: onRender },
       ],
-      intro: `The Grace British Bake Off is an e-commerce site selling baked goods. Our pastries are based on our favorite bakery show 'The Great British Bake Off'. `,
-      soloIntro: `I was responsible for styling the website, creating the single product and cart React components, and transitioning the guest cart state from local storage to the Redux store. `,
+      intro: `The Grace British Bake Off is an e-commerce site selling baked goods that based on our favorite bakery show 'The Great British Bake Off'. `,
+      soloIntro: `I designed the overall style of the website with CSS3, created the single product and cart React components, and transitioned the guest cart state from local storage to the Redux store. `,
     },
     {
       type: 'Grace Hopper',
@@ -117,6 +117,7 @@ const initialState = {
         { techName: 'Render', techIcon: onRender },
       ],
       intro: `PartyPal is an application where you can find a curated list of highly rated caterer and venue recommendations based on location for your next party! `,
+      soloIntro: `I created user authentication and gatekeeping middleware to protect API routes, designed log-in, sign-up, search, and new event forms using Material-UI, built React components for the home page, user dashboard, and favorites page, and managed state using both React Hooks and Redux. `,
     },
     {
       type: 'Game Time',
@@ -135,7 +136,7 @@ const initialState = {
         { techName: 'Git', techIcon: git },
         { techName: 'Render', techIcon: onRender },
       ],
-      intro: `Guess Siyun's Number is a guessing game that allows you to guess the secret number between 1 and 20. You will have 5 chances to guess the secret number`,
+      intro: `Guess Siyun's Number is a guessing game that allows you to guess the secret number between 1 and 20. You will have 5 chances to guess the secret number. `,
     },
   ],
   technologies: [
