@@ -667,7 +667,16 @@ div .tech-name {
 }
 
 button.proj-details-button {
-  margin: 0 1.5rem;
+  margin: 0.5rem 1.5rem;
+}
+
+#tech-stack-list {
+  padding: 1.5rem 5rem;
+  margin: 1rem 5rem;
+}
+
+#tech-stack-list div.each-skill {
+  width: 135px;
 }
 
 @media (max-width: 600px) {
@@ -680,15 +689,28 @@ button.proj-details-button {
     flex-direction: column;
     align-items: center;
   }
-}
 
-#tech-stack-list {
-  padding: 1.5rem 5rem;
-  margin: 1rem 5rem;
-}
+  .intro__img {
+    grid-area: img;
+    min-width: 250px;
+    position: relative;
+    z-index: 2;
+  }
 
-#tech-stack-list div.each-skill {
-  width: 135px;
+  #tech-stack-list {
+    padding: 0.5rem;
+    margin: 1rem;
+  }
+
+  #tech-stack-list div.each-skill {
+    width: 100px;
+  }
+
+  .tech-icon img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+  }
 }
 
 /* Contact */
