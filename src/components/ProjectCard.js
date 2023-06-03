@@ -10,14 +10,6 @@ const ProjectCard = (props) => {
         <div className='proj-txtx'>
           <h4>{title}</h4>
           <span className='proj-intro'>{intro}</span>
-          <div className='proj-link-box'>
-            <a href={websiteUrl} target={`_blank`}>
-              Website
-            </a>
-            <a href={githubUrl} target={`_blank`}>
-              GitHub
-            </a>
-          </div>
           <Link to={`/projects/${title}`}>
             <div className='proj-details'>
               <button className='proj-details-button'>More Details</button>
