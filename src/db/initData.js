@@ -61,7 +61,7 @@ const initialState = {
         { techName: 'Render', techIcon: onRender },
       ],
       intro: `Vintager is a blog for you to discover timeless pieces that capture the essence of bygone eras. From elegant dresses to charming accessories, embrace the allure of vintage and add a touch of nostalgia to your style. `,
-      soloIntro: `This solo project is a blog about vintage fashion built using Next.js. Data is stored in Hygraph and queried using GraphQL. Visitors can submit comments which need to be approved by the admin before they are visible. `,
+      soloIntro: `Vintager is a solo project that I used to learn Next.js and GraphQL. It is a vintage fashion blog I that utilizes Hygraph for data storage and GraphQL for querying. To maintain quality content, visitor comments undergo admin approval before being displayed. `,
     },
     {
       type: 'Grace Hopper',
@@ -86,7 +86,7 @@ const initialState = {
         { techName: 'Render', techIcon: onRender },
       ],
       intro: `The Grace British Bake Off is an e-commerce site selling baked goods that based on our favorite bakery show 'The Great British Bake Off'. `,
-      soloIntro: `I designed the overall style of the website with CSS3, created the single product and cart React components, and transitioned the guest cart state from local storage to the Redux store. `,
+      soloIntro: `My responsibilities included styling the website's overall design, developing React components for single product display and the cart functionality, and migrating the guest cart state from local storage to the Redux store. `,
     },
     {
       type: 'Grace Hopper',
@@ -116,8 +116,8 @@ const initialState = {
         { techName: 'Git', techIcon: git },
         { techName: 'Render', techIcon: onRender },
       ],
-      intro: `PartyPal is an application where you can find a curated list of highly rated caterer and venue recommendations based on location for your next party! `,
-      soloIntro: `I created user authentication and gatekeeping middleware to protect API routes, designed log-in, sign-up, search, and new event forms using Material-UI, built React components for the home page, user dashboard, and favorites page, and managed state using both React Hooks and Redux. `,
+      intro: `PartyPal is a platform that offers curated recommendations for caterers and venues based on location, intended for users planning their next party. `,
+      soloIntro: `My main contributions to the project involved implementing user authentication and gatekeeping middleware to safeguard API routes, designing intuitive login and signup forms, search functionality, and event creation forms using MaterialUI. Additionally, I was responsible for building React components for the home page, user dashboard, and favorites page, and effectively managed state using a combination of React Hooks and Redux. `,
     },
     {
       type: 'Game Time',
@@ -136,7 +136,8 @@ const initialState = {
         { techName: 'Git', techIcon: git },
         { techName: 'Render', techIcon: onRender },
       ],
-      intro: `Guess Siyun's Number is a guessing game that allows you to guess the secret number between 1 and 20. You will have 5 chances to guess the secret number. `,
+      intro: `Guess Siyun's Number is an interactive guessing game where you can attempt to guess the secret number within the range of 1 to 20. Test your intuition within 5 attempts.`,
+      soloIntro: `I developed this game using React, HTML, and CSS as a way to enhance my React skills. It started as a small project written in plain JavaScript, HTML, and CSS, and I transformed it into a fully functional and engaging game utilizing the power of React. `,
     },
   ],
   technologies: [

@@ -744,11 +744,11 @@ button.proj-details-button {
 /* Footer */
 
 .footer {
-  padding: 25px 0;
-  background-position: center;
+  padding: 2.5rem 0;
+  background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url('../src/assets/img/projects-bg2.png');
+  background-image: url('../src/assets/img/projects-bg3.png');
 }
 
 .footer-box {
