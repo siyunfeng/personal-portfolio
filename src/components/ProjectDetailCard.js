@@ -18,7 +18,6 @@ const ProjectDetailCard = (props) => {
     intro,
     soloIntro,
   } = project;
-  // console.log('project =', title, intro, githubUrl, websiteUrl);
 
   return (
     <>

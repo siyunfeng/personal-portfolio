@@ -43,9 +43,11 @@ const NavBar = (props) => {
   return (
     <Navbar expand='lg' className={scrolled ? 'scrolled' : ''}>
       <Container>
-        <Navbar.Brand>
-          <img src={logo} alt='logo' id='logo' />
-        </Navbar.Brand>
+        <Link to='/'>
+          <Navbar.Brand>
+            <img src={logo} alt='logo' id='logo' />
+          </Navbar.Brand>
+        </Link>
         <Navbar.Toggle aria-controls='basic-navbar-nav'>
           <span className='navbar-toggler-icon'></span>
         </Navbar.Toggle>

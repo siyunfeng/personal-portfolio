@@ -579,16 +579,20 @@ div .tech-name {
 
 /* Project Details */
 
+/* #project_intro.intro {} */
+
+.portfolio-item-individual, #tech-stack-list {
+  padding: 1.5rem 2rem;
+  margin: 1.5rem 20rem;
+  justify-content: center;
+}
+
 #project_intro {
-  padding: 3em 2em 3em 2em;
+  margin: 2rem auto;
 }
 
 #project_intro .title {
   text-shadow: 2px 2px white;
-}
-
-.intro {
-  position: relative;
 }
 
 .section__title {
@@ -602,6 +606,7 @@ div .tech-name {
   font-family: var(--ff-secondary);
   margin-bottom: 1em;
   color: var(--clr-dark);
+  padding: 5rem auto;
   display: inline-block;
   background-color: rgba(100, 64, 39, 0.487);
 }
@@ -646,8 +651,6 @@ div .tech-name {
 
 .portfolio-item-individual {
   text-align: start;
-  padding: 1.5rem 5rem;
-  margin: 1rem 5rem;
 }
 
 .portfolio-item-intro {
@@ -666,13 +669,8 @@ button.proj-details-button {
   margin: 0.5rem 1.5rem;
 }
 
-#tech-stack-list {
-  padding: 1.5rem 5rem;
-  margin: 1rem 5rem;
-}
-
 #tech-stack-list div.each-skill {
-  width: 135px;
+  width: 110px;
 }
 
 @media (max-width: 600px) {
