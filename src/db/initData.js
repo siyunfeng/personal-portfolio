@@ -162,7 +162,7 @@ const initialState = {
     { techName: 'Sass', techIcon: sass },
     { techName: 'Styled-Components', techIcon: styledComponents },
   ],
-  navLinkNames: ['home', 'skills', 'projects', 'contact'],
+  navLinkNames: ['home', 'skills', 'projects'],
 };
 
 export default initialState;
