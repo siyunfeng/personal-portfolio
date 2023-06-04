@@ -61,7 +61,7 @@ const initialState = {
         { techName: 'Render', techIcon: onRender },
       ],
       intro: `Vintager is a blog for you to discover timeless pieces that capture the essence of bygone eras. From elegant dresses to charming accessories, embrace the allure of vintage and add a touch of nostalgia to your style. `,
-      soloIntro: `Vintager is a solo project that I used to learn Next.js and GraphQL. It is a vintage fashion blog I that utilizes Hygraph for data storage and GraphQL for querying. To maintain quality content, visitor comments undergo admin approval before being displayed. `,
+      soloIntro: `Vintager is a solo project that I used to learn Next.js and GraphQL. It is a vintage fashion blog that utilizes Hygraph for data storage and GraphQL for querying. To maintain quality content, visitor comments undergo admin approval before being displayed. `,
     },
     {
       type: 'Grace Hopper',
