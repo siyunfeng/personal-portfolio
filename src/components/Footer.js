@@ -25,6 +25,7 @@ const Footer = () => {
             </div>
           </Col>
           <Col>
+            <p className='copy-right'>Made with ❤️ in New York</p>
             <p className='copy-right'>© 2023 Siyun Feng</p>
           </Col>
         </Row>
