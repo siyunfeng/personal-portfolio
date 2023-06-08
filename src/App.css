@@ -11,12 +11,13 @@
 html {
   scroll-padding-top: 75px;
   scroll-behavior: smooth;
-  background-image: url(./assets/img/background.png);
+  /* background-image: url(./assets/img/background.png); */
 }
 
 body {
-  background-image: url(./assets/img/background.png);
-  color: white !important;
+  /* background-image: url(./assets/img/background.png); */
+  background-color: #f9e8cda8 !important;
+  color: rgba(100, 64, 39, 0.924) !important;
   position: relative;
   font-family: 'Ubuntu', 'Alegreya', serif, sans-serif !important;
   overflow-x: hidden;
@@ -363,7 +364,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-position: top center;
   /* background-size: cover; */
   background-repeat: no-repeat;
-  background-image: url('../src/assets/img/background.png');
+  /* background-image: url('../src/assets/img/background.png'); */
 }
 
 .skills h2 {
@@ -411,7 +412,7 @@ div .tech-name {
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url('../src/assets/img/projects-bg3.png');
+  /* background-image: url('../src/assets/img/projects-bg3.png'); */
 }
 
 .project h2 {
@@ -747,7 +748,7 @@ button.proj-details-button {
 .footer {
   padding: 2.5rem 0;
   background-repeat: no-repeat;
-  background-image: url('../src/assets/img/background.png');
+  /* background-image: url('../src/assets/img/background.png'); */
 }
 
 .footer-box {

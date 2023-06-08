@@ -5,8 +5,9 @@ import navGmail from '../assets/img/nav-email.png';
 
 const Footer = () => {
   return (
-    <footer className='footer'>
-      <Container>
+    <footer>
+      <hr />
+      <Container className='footer'>
         <Row className='align-items-center footer-box'>
           <Col>
             <div className='social-icon'>
