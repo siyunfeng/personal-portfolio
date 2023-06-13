@@ -2,7 +2,7 @@ import { Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const ProjectCard = (props) => {
-  const { title, intro, imgUrl, githubUrl, websiteUrl } = props;
+  const { title, intro, imgUrl } = props;
   return (
     <Col sm={6} md={4}>
       <div className='proj-imgbx'>

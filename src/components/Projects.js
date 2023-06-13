@@ -36,7 +36,7 @@ const Projects = (props) => {
               </Nav>
               <Tab.Content>
                 <Tab.Pane eventKey='first'>
-                  <Row>
+                  <Row className='project-card-container'>
                     {ghProject.map((project, index) => (
                       <ProjectCard
                         key={index}
@@ -47,7 +47,7 @@ const Projects = (props) => {
                   </Row>
                 </Tab.Pane>
                 <Tab.Pane eventKey='second'>
-                  <Row>
+                  <Row className='project-card-container'>
                     {gameTimeProject.map((project, index) => (
                       <ProjectCard key={index} {...project} />
                     ))}
