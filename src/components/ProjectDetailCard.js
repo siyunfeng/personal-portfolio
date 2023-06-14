@@ -41,8 +41,6 @@ const ProjectDetailCard = (props) => {
         <div className='demo-video-container'>
           <iframe
             className='demo-video'
-            // width='560'
-            // height='315'
             src={demoUrl}
             title={title}
             frameBorder='0'
