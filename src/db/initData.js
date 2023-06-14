@@ -116,6 +116,7 @@ const initialState = {
         { techName: 'Git', techIcon: git },
         { techName: 'Render', techIcon: onRender },
       ],
+      demoUrl: 'https://www.youtube.com/embed/XSrBzZxs0Gs',
       intro: `PartyPal is a platform that offers curated recommendations for caterers and venues based on location, intended for users planning their next party. `,
       soloIntro: `My main contributions to the project involved implementing user authentication and gatekeeping middleware to safeguard API routes, designing intuitive login and signup forms, search functionality, and event creation forms using MaterialUI. Additionally, I was responsible for building React components for the home page, user dashboard, and favorites page, and effectively managed state using a combination of React Hooks and Redux. `,
     },

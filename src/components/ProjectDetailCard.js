@@ -11,7 +11,7 @@ const ProjectDetailCard = (props) => {
     title,
     slogan,
     logo,
-    imgUrl,
+    demoUrl,
     githubUrl,
     websiteUrl,
     technologies,
@@ -36,6 +36,23 @@ const ProjectDetailCard = (props) => {
           <button className='proj-details-button'>GitHub</button>
         </a>
       </div>
+
+      {demoUrl ? (
+        <div className='demo-video-container'>
+          <iframe
+            className='demo-video'
+            // width='560'
+            // height='315'
+            src={demoUrl}
+            title={title}
+            frameBorder='0'
+            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+            allowFullScreen
+          ></iframe>
+        </div>
+      ) : (
+        ''
+      )}
 
       <div className='portfolio-item-individual'>
         <p className='portfolio-item-intro'>{intro}</p>

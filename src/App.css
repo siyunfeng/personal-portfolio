@@ -667,6 +667,15 @@ div .tech-name {
   box-shadow: rgba(198, 150, 121, 0.4) 4px 4px, rgba(198, 150, 121, 0.4) 6px 6px;
 }
 
+.demo-video-container {
+  margin: 2rem auto;
+}
+
+.demo-video {
+  width: 820px;
+  height: 461px;
+}
+
 @media (min-width: 600px) {
   .intro {
     display: grid;
@@ -701,7 +710,6 @@ div .tech-name {
 
 .portfolio-item-individual {
   text-align: start;
-  /* border: 0.3rem solid rgba(255, 255, 255, 0.522); */
 }
 
 .portfolio-item-intro {
@@ -723,9 +731,9 @@ button.proj-details-button {
 }
 
 @media (max-width: 600px) {
-  .portfolio-item-individual {
+  .portfolio-item-individual, #tech-stack-list {
     padding: 0.5rem 1rem;
-    margin: 0.5rem 2rem;
+    margin: 0.5rem 1rem;
   }
 
   .portfolio-button-container {
@@ -753,6 +761,24 @@ button.proj-details-button {
     width: 90px;
     height: 90px;
     object-fit: contain;
+  }
+
+  .demo-video {
+    width: 350px;
+    height: 197px;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1024px) {
+  .portfolio-item-individual, #tech-stack-list {
+    padding: 1.5rem 2rem;
+    margin: 1.5rem 2rem;
+    justify-content: center;
+  }
+  
+  .demo-video {
+    width: 600px;
+    height: 337px;
   }
 }
 
