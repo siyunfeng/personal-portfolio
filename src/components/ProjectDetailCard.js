@@ -1,4 +1,5 @@
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 const ProjectDetailCard = (props) => {
   const { projects } = props;
@@ -21,6 +22,11 @@ const ProjectDetailCard = (props) => {
 
   return (
     <>
+      <div className='back-to-projects'>
+        <Link to='/projects'>
+          <button className='proj-details-button'>Back to projects</button>
+        </Link>
+      </div>
       <section className='intro' id='project_intro'>
         <h1 className='section__title section__title--intro'>
           <strong className='title'>{title}</strong>

@@ -90,7 +90,7 @@ nav.navbar .navbar-nav a.navbar-link {
   color: #fff !important;
   letter-spacing: 0.8px;
   padding: 0 25px;
-  font-size: 18px;
+  font-size: 20px;
   opacity: 0.75;
   transition: transform 0.2s;
 }
@@ -326,6 +326,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: transform 0.1s;
   position: relative;
   margin-top: 2rem;
+}
+
+.back-to-projects {
+  display: flex;
+  align-self: flex-start;
+  margin: 0.5rem 5rem;
 }
 
 .proj-details-button {
@@ -651,11 +657,8 @@ div .tech-name {
 }
 
 .section__subtitle--intro {
-  background: var(--clr-accent);
   padding: 0.25em 1em;
-  font-family: var(--ff-secondary);
   margin-bottom: 1em;
-  color: var(--clr-dark);
   padding: 5rem auto;
   display: inline-block;
   background-color: rgba(100, 64, 39, 0.487);
@@ -664,7 +667,7 @@ div .tech-name {
 .intro__img {
   width: 7rem;
   border-radius: 18%;
-  box-shadow: rgba(198, 150, 121, 0.4) 4px 4px, rgba(198, 150, 121, 0.4) 6px 6px;
+  box-shadow: rgba(200, 200, 200, 0.4) 4px 4px, rgba(200, 200, 200, 0.4) 6px 6px;
 }
 
 .demo-video-container {
@@ -704,7 +707,7 @@ div .tech-name {
     left: -1.5em;
     width: calc(100% + 1.5em);
     padding-left: calc(250px + 1em);
-    background-color: rgba(100, 64, 39, 0.487);
+    /* background-color: rgba(100, 64, 39, 0.487); */
   }
 }
 
@@ -767,6 +770,10 @@ button.proj-details-button {
     width: 350px;
     height: 197px;
   }
+
+  .back-to-projects {
+    margin: 0.5rem;
+  }
 }
 
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -779,6 +786,10 @@ button.proj-details-button {
   .demo-video {
     width: 600px;
     height: 337px;
+  }
+
+  .back-to-projects {
+    margin: 0.5rem 2rem;
   }
 }
 
