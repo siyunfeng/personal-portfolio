@@ -21,65 +21,69 @@ const ProjectDetailCard = (props) => {
   } = project;
 
   return (
-    <>
+    <section id='project-details'>
       <div className='back-to-projects'>
         <Link to='/projects'>
-          <button className='proj-details-button'>Back to projects</button>
+          <button className='proj-details-button back-to-proj-button'>
+            Back to projects
+          </button>
         </Link>
       </div>
-      <section className='intro' id='project_intro'>
-        <h1 className='section__title section__title--intro'>
-          <strong className='title'>{title}</strong>
-        </h1>
-        <p className='section__subtitle section__subtitle--intro'>{slogan}</p>
-        <img src={logo} alt={title} className='intro__img' />
-      </section>
-      <div className='portfolio-button-container'>
-        <a href={websiteUrl} target='_blank' rel='noopener noreferrer'>
-          <button className='proj-details-button'>Try it</button>
-        </a>
-        <a href={githubUrl} target='_blank' rel='noopener noreferrer'>
-          <button className='proj-details-button'>GitHub</button>
-        </a>
-      </div>
-
-      {demoUrl ? (
-        <div className='demo-video-container'>
-          <iframe
-            className='demo-video'
-            src={demoUrl}
-            title={title}
-            frameBorder='0'
-            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-            allowFullScreen
-          ></iframe>
+      <div className='proj-details-main'>
+        <div className='intro'>
+          <h1 className='section__title section__title--intro'>
+            <strong className='title'>{title}</strong>
+          </h1>
+          <p className='section__subtitle section__subtitle--intro'>{slogan}</p>
+          <img src={logo} alt={title} className='intro__img' />
         </div>
-      ) : (
-        ''
-      )}
+        <div className='portfolio-button-container'>
+          <a href={websiteUrl} target='_blank' rel='noopener noreferrer'>
+            <button className='proj-details-button'>Try it</button>
+          </a>
+          <a href={githubUrl} target='_blank' rel='noopener noreferrer'>
+            <button className='proj-details-button'>GitHub</button>
+          </a>
+        </div>
 
-      <div className='portfolio-item-individual'>
-        <p className='portfolio-item-intro'>{intro}</p>
-        <img src='#' alt='' />
-        <p className='portfolio-item-intro'>{soloIntro}</p>
-      </div>
+        {demoUrl ? (
+          <div className='demo-video-container'>
+            <iframe
+              className='demo-video'
+              src={demoUrl}
+              title={title}
+              frameBorder='0'
+              allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+              allowFullScreen
+            ></iframe>
+          </div>
+        ) : (
+          ''
+        )}
 
-      <section className='tech-stack' id='tech-stack'>
-        <h3 className='section__title section__title--tech'>Tech Stack</h3>
-        <div className='skills-list' id='tech-stack-list'>
-          {technologies.map((tech, index) => {
-            return (
-              <div className='each-skill' key={index}>
-                <div className='tech-icon'>
-                  <img src={tech.techIcon} alt={tech.techName} />
+        <div className='portfolio-item-individual'>
+          <p className='portfolio-item-intro'>{intro}</p>
+          <img src='#' alt='' />
+          <p className='portfolio-item-intro'>{soloIntro}</p>
+        </div>
+
+        <div className='tech-stack' id='tech-stack'>
+          <h3 className='section__title section__title--tech'>Tech Stack</h3>
+          <div className='skills-list' id='tech-stack-list'>
+            {technologies.map((tech, index) => {
+              return (
+                <div className='each-skill' key={index}>
+                  <div className='tech-icon'>
+                    <img src={tech.techIcon} alt={tech.techName} />
+                  </div>
+                  <div className='tech-name'>{tech.techName}</div>
                 </div>
-                <div className='tech-name'>{tech.techName}</div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 };
 
