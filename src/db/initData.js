@@ -33,6 +33,7 @@ import hygraph from '../assets/icons/hygraph.webp';
 import sass from '../assets/icons/sass.svg';
 import nextJS from '../assets/icons/nextjs.svg';
 import yelp from '../assets/icons/yelp.svg';
+import vercel from '../assets/icons/vercel.svg';
 
 const initialState = {
   projects: [
@@ -127,7 +128,7 @@ const initialState = {
       logo: logoGuessMyNumber,
       imgUrl: guessSiyunNumber,
       githubUrl: 'https://github.com/siyunfeng/guess-my-number',
-      websiteUrl: 'https://guess-siyun-number.onrender.com/',
+      websiteUrl: 'https://guessingnum.vercel.app/',
       technologies: [
         { techName: 'JavaScript', techIcon: javascript },
         { techName: 'NodeJS', techIcon: nodeJS },
@@ -135,27 +136,26 @@ const initialState = {
         { techName: 'HTML5', techIcon: html5 },
         { techName: 'CSS3', techIcon: css3 },
         { techName: 'Git', techIcon: git },
-        { techName: 'Render', techIcon: onRender },
+        { techName: 'Vercel', techIcon: vercel },
       ],
       intro: `Guess Siyun's Number is an interactive guessing game where you can attempt to guess the secret number within the range of 1 to 20. Test your intuition within 5 attempts.`,
-      soloIntro: `I developed this game using React, HTML, and CSS as a way to enhance my React skills. It started as a small project written in plain JavaScript, HTML, and CSS, and I transformed it into a fully functional and engaging game utilizing the power of React. `,
+      soloIntro: `I developed this game using React, HTML, and CSS as a way to enhance my React skills. It started as my small project written in plain JavaScript, HTML, and CSS, and I transformed it into a fully functional and engaging game utilizing the power of React. `,
     },
   ],
   technologies: [
     { techName: 'JavaScript', techIcon: javascript },
     { techName: 'NodeJS', techIcon: nodeJS },
     { techName: 'React', techIcon: reactJS },
+    { techName: 'NextJS', techIcon: nextJS },
     { techName: 'Redux', techIcon: reduxJS },
-    { techName: 'Express', techIcon: express },
-    { techName: 'Sequelize', techIcon: sequelize },
-    { techName: 'PostgreSQL', techIcon: postgreSQL },
     { techName: 'HTML5', techIcon: html5 },
     { techName: 'CSS3', techIcon: css3 },
+    { techName: 'Express', techIcon: express },
+    { techName: 'Sequelize', techIcon: sequelize },
+    { techName: 'GraphQL', techIcon: graphQL },
+    { techName: 'PostgreSQL', techIcon: postgreSQL },
     { techName: 'Git', techIcon: git },
     { techName: 'Webpack', techIcon: webpack },
-    { techName: 'Render', techIcon: onRender },
-    { techName: 'NextJS', techIcon: nextJS },
-    { techName: 'GraphQL', techIcon: graphQL },
     { techName: 'Hygraph', techIcon: hygraph },
     { techName: 'MomentJS', techIcon: momentJS },
     { techName: 'Material-UI', techIcon: materialUI },
@@ -163,6 +163,8 @@ const initialState = {
     { techName: 'Tailwind CSS', techIcon: tailwindCSS },
     { techName: 'Sass', techIcon: sass },
     { techName: 'Styled-Components', techIcon: styledComponents },
+    { techName: 'Render', techIcon: onRender },
+    { techName: 'Vercel', techIcon: vercel },
   ],
   navLinkNames: ['home', 'skills', 'projects'],
 };
