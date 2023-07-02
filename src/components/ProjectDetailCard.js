@@ -76,7 +76,9 @@ const ProjectDetailCard = (props) => {
                   <div className='tech-icon'>
                     <img src={tech.techIcon} alt={tech.techName} />
                   </div>
-                  <div className='tech-name'>{tech.techName}</div>
+                  <div className='tech-name portfolio-item-intro'>
+                    {tech.techName}
+                  </div>
                 </div>
               );
             })}
