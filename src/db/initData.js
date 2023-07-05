@@ -2,7 +2,7 @@
 import vintagerImg from '../assets/img/vintagerImg.png';
 import partypalImg from '../assets/img/partypalImg.png';
 import theGraceBritishBakeOff from '../assets/img/the-grace-british-bake-off.png';
-import guessSiyunNumber from '../assets/img/guess-siyun-number.png';
+import guessMyNumberImg from '../assets/img/guess-siyun-number.png';
 
 // Project Logos
 import logoVintager from '../assets/img/logo-Vintager.png';
@@ -61,8 +61,9 @@ const initialState = {
         { techName: 'Git', techIcon: git },
         { techName: 'Render', techIcon: onRender },
       ],
-      intro: `Vintager is a blog for you to discover timeless pieces that capture the essence of bygone eras. From elegant dresses to charming accessories, embrace the allure of vintage and add a touch of nostalgia to your style. `,
-      soloIntro: `Vintager is a solo project that I used to learn Next.js and GraphQL. It is a vintage fashion blog that utilizes Hygraph for data storage and GraphQL for querying. To maintain quality content, visitor comments undergo admin approval before being displayed. `,
+      intro: `Vintager is a place for you to discover timeless pieces that capture the essence of bygone eras. From elegant dresses to charming accessories, embrace the allure of vintage and add a touch of nostalgia to your style. `,
+      appFeatures: `Vintager is a vintage fashion blog built with Next.js and GraphQL. Users can view featured and recent posts, browse by categories, and comment on the posts. Posts and comments are moderated to ensure quality control before publishing comments. The blog data is stored and managed using Hygaph, a headless content management system, and queried using GraphQL.The site was designed using Tailwind CSS to ensure the styling is consistent and fully responsive on both desktop and mobile devices. `,
+      soloIntro: ``,
     },
     {
       type: 'Grace Hopper',
@@ -71,7 +72,7 @@ const initialState = {
       logo: logoTheGraceBritishBakeOff,
       imgUrl: theGraceBritishBakeOff,
       githubUrl: 'https://github.com/siyunfeng/The-Grace-British-Bake-Off',
-      websiteUrl: 'https://grace-shopper-e.onrender.com/',
+      websiteUrl: 'https://grace-bake-off.onrender.com/',
       technologies: [
         { techName: 'JavaScript', techIcon: javascript },
         { techName: 'NodeJS', techIcon: nodeJS },
@@ -86,8 +87,9 @@ const initialState = {
         { techName: 'Git', techIcon: git },
         { techName: 'Render', techIcon: onRender },
       ],
-      intro: `The Grace British Bake Off is an e-commerce site selling baked goods that based on our favorite bakery show 'The Great British Bake Off'. `,
-      soloIntro: `My responsibilities included styling the website's overall design, developing React components for single product display and the cart functionality, and migrating the guest cart state from local storage to the Redux store. `,
+      intro: `The Grace British Bake Off is an e-commerce site selling baked goods based on our favorite bakery show 'The Great British Bake Off'. `,
+      appFeatures: `Users can browse products, add products to cart, and checkout as a guest or registered user. `,
+      soloIntro: `My responsibilities included styling the website's overall design, developing React components for the single product display and the cart functionality, and migrating the guest cart state from local storage to the Redux store when a guest creates an account. `,
     },
     {
       type: 'Grace Hopper',
@@ -117,15 +119,16 @@ const initialState = {
         { techName: 'Render', techIcon: onRender },
       ],
       demoUrl: 'https://www.youtube.com/embed/XSrBzZxs0Gs',
-      intro: `PartyPal is a platform that offers curated recommendations for caterers and venues based on location, intended for users planning their next party. `,
-      soloIntro: `My main contributions to the project involved implementing user authentication and gatekeeping middleware to safeguard API routes, designing intuitive login and signup forms, search functionality, and event creation forms using MaterialUI. Additionally, I was responsible for building React components for the home page, user dashboard, and favorites page, and effectively managed state using a combination of React Hooks and Redux. `,
+      intro: `PartyPal is an app intended for users planning their next party that offers curated recommendations for caterers and venues based on location. `,
+      appFeatures: `Users can search for caterers or venues in a specific location, filter the search results by price or cuisine, view details about a venue or caterer, and add selected venues/caterers to their Liked List. Users can then create an event and choose from the venues and/or caterers that they added to their list. `,
+      soloIntro: `I designed the log-in/sign-up forms, and the event creation forms using MaterialUI and built React components for the home page, user dashboard, and favorites page. I also implemented the search functionality and user authentication and gatekeeping middleware to safeguard API routes. Finally I was responsible for managing the app state using a combination of React Hooks and Redux. `,
     },
     {
       type: 'Game Time',
-      title: `Guess Siyun's Number`,
-      slogan: `Unlock the Mystery, Guess Siyun's Number!`,
+      title: `Guess My Number`,
+      slogan: `Unlock the Mystery, Guess My Number!`,
       logo: logoGuessMyNumber,
-      imgUrl: guessSiyunNumber,
+      imgUrl: guessMyNumberImg,
       githubUrl: 'https://github.com/siyunfeng/guess-my-number',
       websiteUrl: 'https://guessingnum.vercel.app/',
       technologies: [
@@ -137,8 +140,9 @@ const initialState = {
         { techName: 'Git', techIcon: git },
         { techName: 'Vercel', techIcon: vercel },
       ],
-      intro: `Guess Siyun's Number is an interactive guessing game where you can attempt to guess the secret number within the range of 1 to 20. Test your intuition within 5 attempts.`,
-      soloIntro: `I developed this game using React, HTML, and CSS as a way to enhance my React skills. It started as my small project written in plain JavaScript, HTML, and CSS, and I transformed it into a fully functional and engaging game utilizing the power of React. `,
+      intro: `Guess My Number is an interactive guessing game built using NodeJS and React. The user has 5 attempts to guess the secret number within the range of 1 to 20. `,
+      appFeatures: ``,
+      soloIntro: `Guess My Number started as a simple game I wrote using plain JavaScript, HTML, and CSS. I decided to rebuild the game using React and now I use it as a playground to practice various frontend skills. `,
     },
   ],
   technologies: [

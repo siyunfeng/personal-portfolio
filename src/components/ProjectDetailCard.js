@@ -17,6 +17,7 @@ const ProjectDetailCard = (props) => {
     websiteUrl,
     technologies,
     intro,
+    appFeatures,
     soloIntro,
   } = project;
 
@@ -63,8 +64,12 @@ const ProjectDetailCard = (props) => {
 
         <div className='portfolio-item-individual'>
           <p className='portfolio-item-intro'>{intro}</p>
-          <img src='#' alt='' />
-          <p className='portfolio-item-intro'>{soloIntro}</p>
+          {appFeatures ? (
+            <p className='portfolio-item-intro'>{appFeatures}</p>
+          ) : (
+            ''
+          )}
+          {soloIntro ? <p className='portfolio-item-intro'>{soloIntro}</p> : ''}
         </div>
 
         <div className='tech-stack' id='tech-stack'>
