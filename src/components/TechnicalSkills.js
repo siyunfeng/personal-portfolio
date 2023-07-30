@@ -7,7 +7,7 @@ const TechnicalSkills = ({ technologies }) => {
   return (
     <section className='skills' id='skills'>
       <Container>
-        <h2>Technologies</h2>
+        <h2>Technical Skills</h2>
         <div className='skills-list'>
           {skills.map((skill, index) => {
             return (

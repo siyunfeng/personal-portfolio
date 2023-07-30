@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&family=Cantarell&family=Cherry+Swash&family=DM+Sans&family=DM+Serif+Display&family=Fjalla+One&family=Flamenco&family=Indie+Flower&family=Josefin+Sans:wght@300&family=Oswald&family=Source+Sans+Pro&family=Special+Elite&family=Ubuntu&family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Bona+Nova:wght@400;700&family=Fjalla+One&family=Libre+Franklin:wght@400;700&family=Special+Elite&family=Quicksand:wght@400;700&family=Roboto:wght@400;700&family=Ubuntu:wght@400;700&family=Nova+Mono&family=Ysabeau+Infant:wght@400;700&display=swap');
 
 /* General CSS */
 
@@ -17,7 +17,7 @@ body {
   background-color: #f9e8cda8 !important;
   color: rgba(100, 64, 39, 0.924) !important;
   position: relative;
-  font-family: 'Ubuntu', 'Alegreya', serif, sans-serif !important;
+  font-family: 'Nova Mono', 'Ubuntu', serif, sans-serif !important;
   overflow-x: hidden;
 }
 
@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
   margin: 0;
   line-height: normal;
-  font-family: 'Alegreya', serif !important;
+  font-family: 'Arvo', serif !important;
 }
 
 #top-button {
@@ -40,6 +40,12 @@ h1, h2, h3, h4, h5, h6 {
 #top-button img{
   width: 3.5rem;
   margin: 1.5rem;
+}
+
+.banner-intro p,
+span.proj-intro,
+.portfolio-item-individual {
+  font-family: 'Ubuntu';
 }
 
 /* NavBar */
@@ -64,9 +70,9 @@ a.navbar-link:active {
   color: inherit;
 }
 
-#basic-navbar-nav {
-  font-family: 'Alegreya', 'Cherry Swash', Arial, sans-serif;
-}
+/* #basic-navbar-nav {
+  font-family: 'Nova Mono', Arial, sans-serif;
+} */
 
 nav.navbar {
   padding: 0.5rem 0;
@@ -621,10 +627,6 @@ div .tech-name {
   z-index: -4;
 }
 
-.proj-coming-soon {
-  font-family: 'Special Elite', sans-serif;
-}
-
 /* Project Details */
 
 #project-details {
@@ -868,7 +870,6 @@ div .tech-name {
 .footer-box {
   display: flex;
   flex-direction: column;
-  font-family: 'Ubuntu', sans-serif;
 }
 
 .copy-right {

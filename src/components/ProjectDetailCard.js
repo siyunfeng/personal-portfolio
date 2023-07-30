@@ -69,7 +69,18 @@ const ProjectDetailCard = (props) => {
           ) : (
             ''
           )}
-          {soloIntro ? <p className='portfolio-item-intro'>{soloIntro}</p> : ''}
+          {soloIntro ? (
+            <div className='portfolio-item-intro'>
+              My responsibilities included:{' '}
+              <ul>
+                {soloIntro.map((bulletpoint) => {
+                  return <li>{bulletpoint}</li>;
+                })}
+              </ul>
+            </div>
+          ) : (
+            ''
+          )}
         </div>
 
         <div className='tech-stack' id='tech-stack'>
