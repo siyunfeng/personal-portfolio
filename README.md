@@ -21,6 +21,7 @@ Website Title Icon
 <a href="https://www.flaticon.com/free-icons/woman" title="woman icons">created by Victoruler - Flaticon</a> ·
 Profile Sticker
 <a href="https://www.flaticon.com/free-stickers/profile" title="profile stickers">created by Stickers - Flaticon</a> ·
+<a href="https://www.flaticon.com/free-stickers/autumn" title="autumn stickers">Autumn stickers created by Stickers - Flaticon</a> ·
 Tab Logo
 <a href="https://www.flaticon.com/free-stickers/girl" title="girl stickers">created by Stickers - Flaticon</a> ·
 Navbar Icon

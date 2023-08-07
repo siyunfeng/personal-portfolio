@@ -1,4 +1,4 @@
-import headerImg from '../assets/img/banner-avatar2.png';
+import headerImg from '../assets/img/banner-avatar3.png';
 
 const Banner = () => {
   return (
