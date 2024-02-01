@@ -1,4 +1,5 @@
 import headerImg from '../assets/img/banner-avatar3.png';
+import profileImg from '../assets/img/profile.jpg';
 
 const Banner = () => {
   return (
@@ -9,15 +10,6 @@ const Banner = () => {
             <h1>{`Hi, I'm Siyun.`}</h1>
             <h4 className='wrap'>Full Stack Developer</h4>
             <div className='banner-intro'>
-              {/* <ul>
-                <li>Pronounce: she/her/hers</li>
-                <li>
-                  Highly motivated Software Engineer with a strong passion for
-                  design and a commitment to enhancing user experiences. Career
-                  changer with 6+ years of valuable experience in the HR and
-                  Customer Service industries.
-                </li>
-              </ul> */}
               <p>
                 As a JavaScript developer, I possess a unique blend of
                 creativity, teamwork, and rapid learning abilities. My passion
@@ -38,7 +30,7 @@ const Banner = () => {
             </a>
           </div>
           <div>
-            <img src={headerImg} alt='Header Avatar' className='avatar' />
+            <img src={profileImg} alt='Header Avatar' className='avatar' />
           </div>
         </div>
       </div>

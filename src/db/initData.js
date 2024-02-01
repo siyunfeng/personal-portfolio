@@ -45,6 +45,7 @@ import typescript from '../assets/icons/typescript.svg';
 import sql from '../assets/icons/sql.svg';
 import jwt from '../assets/icons/jwt.svg';
 import chai from '../assets/icons/chai.svg';
+import angular from '../assets/icons/angular.svg';
 
 const initialState = {
   projects: [
@@ -180,6 +181,7 @@ const initialState = {
     { techName: 'TypeScript', techIcon: typescript },
     { techName: 'React', techIcon: reactJS },
     { techName: 'NextJS', techIcon: nextJS },
+    { techName: 'Angular', techIcon: angular },
     { techName: 'Express', techIcon: express },
     { techName: 'HTML5', techIcon: html5 },
     { techName: 'CSS3', techIcon: css3 },

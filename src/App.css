@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Bona+Nova:wght@400;700&family=Fjalla+One&family=Libre+Franklin:wght@400;700&family=Special+Elite&family=Quicksand:wght@400;700&family=Borel&family=Roboto:wght@400;700&family=Figtree&family=Ubuntu:wght@400;700&family=Urbanist&family=Nova+Mono&family=Ysabeau+Infant:wght@400;700&display=swap');
 
 /* General CSS */
+:root {
+  --colorPrimary: rgba(100, 64, 39, 0.924);
+}
 
 * {
   padding: 0;
@@ -15,7 +18,7 @@ html {
 
 body {
   background-color: #f9e8cda8 !important;
-  color: rgba(100, 64, 39, 0.924) !important;
+  color: var(--colorPrimary) !important;
   position: relative;
   font-family: 'Nova Mono', 'Ubuntu', serif, sans-serif !important;
   overflow-x: hidden;
@@ -287,7 +290,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
   line-height: 1;
   margin-bottom: 20px;
-  color: rgba(100, 64, 39, 0.924);
+  color: var(--colorPrimary);
   white-space: nowrap;
   overflow: hidden;
   animation: typing 6s steps(40, end) infinite, blink 0.8s steps(29, end) infinite;
@@ -305,7 +308,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .banner h4 {
-  color: rgba(100, 64, 39, 0.924);
+  color: var(--colorPrimary);
   margin: 1rem auto;
 }
 
@@ -359,8 +362,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .avatar {
-  width: 30rem;
-  transition: transform 0.3s;
+  width: 380px;
+  border-radius: 50%;
+  border: 10px solid rgb(239, 239, 239);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  transition: transform 0.5s;
 }
 
 .avatar:hover {
@@ -371,7 +377,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .skills {
   margin: 3rem auto;
-  color: rgba(100, 64, 39, 0.924);
+  color: var(--colorPrimary);
   background-position: top center;
   background-repeat: no-repeat;
 }
@@ -427,9 +433,9 @@ div .tech-name {
 /* Projects */
 
 .project {
-  padding: 80px;
+  margin: 3rem auto;
   position: relative;
-  color: rgba(100, 64, 39, 0.924);
+  color: var(--colorPrimary);
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -455,7 +461,7 @@ div .tech-name {
 }
 
 .project .nav.nav-pills .nav-link {
-  color: rgba(100, 64, 39, 0.924);
+  color: var(--colorPrimary);
   background-color: rgba(255, 255, 255, 0.43);
   margin: auto 30px;
   border-radius: 50px;
@@ -491,6 +497,7 @@ div .tech-name {
 
   .avatar {
     width: 300px;
+    border: 8px solid rgb(239, 239, 239);
     margin: 2rem auto;
   }
 
@@ -644,7 +651,7 @@ div .tech-name {
 }
 
 .section__title {
-  color:rgba(100, 64, 39, 0.924);
+  color:var(--colorPrimary);
   font-weight: bold;
 }
 
@@ -720,7 +727,7 @@ div .tech-name {
 }
 
 .portfolio-item-intro {
-  color: rgba(100, 64, 39, 0.924);
+  color: var(--colorPrimary);
   padding: 1rem 2rem;
   margin: 0;
 }
@@ -837,7 +844,7 @@ div .tech-name {
 	font-size: 45px;
 	font-weight: 700;
   text-align: center;
-  color: rgba(100, 64, 39, 0.924);
+  color: var(--colorPrimary);
 }
 
 .get-in-touch {
@@ -874,7 +881,7 @@ div .tech-name {
 
 .copy-right {
   margin-top: 1rem;
-  color: rgba(100, 64, 39, 0.924);
+  color: var(--colorPrimary);
 }
 
 /* Default CSS */
