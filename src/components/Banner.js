@@ -1,4 +1,4 @@
-import headerImg from '../assets/img/banner-avatar3.png';
+// import headerImg from '../assets/img/banner-avatar3.png';
 import profileImg from '../assets/img/profile.jpg';
 
 const Banner = () => {

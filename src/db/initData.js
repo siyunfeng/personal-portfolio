@@ -79,7 +79,6 @@ const initialState = {
         `Built REST API routes for products, orders, and users using Express, effectively managing HTTP requests and implementing thorough error handling. `,
         `Architected Sequelize schemas for the order, product, and user models, defining the structure of the PostgreSQL database. `,
       ],
-      // soloIntro: `My responsibilities included styling the website's overall design, developing React components for the single product display and the cart functionality, and migrating the guest cart state from local storage to the Redux store when a guest creates an account. `,
     },
     {
       type: 'Grace Hopper',
@@ -117,7 +116,6 @@ const initialState = {
         `Implemented robust user authentication and gatekeeping middleware using Express, to safeguard the security of API routes. `,
         `Efficiently managed state changes throughout the application with React Hooks and Redux. `,
       ],
-      // soloIntro: `I designed the log-in/sign-up forms, and the event creation forms using MaterialUI and built React components for the home page, user dashboard, and favorites page. I also implemented the search functionality and user authentication and gatekeeping middleware to safeguard API routes. Finally I was responsible for managing the app state using a combination of React Hooks and Redux. `,
     },
     {
       type: 'Grace Hopper',

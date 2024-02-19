@@ -4,6 +4,7 @@ import navGitHub from '../assets/img/nav-github.png';
 import navGmail from '../assets/img/nav-email.png';
 
 const Footer = () => {
+  const date = new Date().getFullYear();
   return (
     <footer>
       <hr />
@@ -27,7 +28,7 @@ const Footer = () => {
           </Col>
           <Col>
             <p className='copy-right'>Made with ❤️ in New York</p>
-            <p className='copy-right'>© 2023 Siyun Feng</p>
+            <p className='copy-right'>© {date} Siyun Feng</p>
           </Col>
         </Row>
       </Container>
