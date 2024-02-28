@@ -589,6 +589,8 @@ div .tech-name {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 1rem;
 }
 
 .proj-imgbx {
@@ -596,7 +598,7 @@ div .tech-name {
   width: 425px;
   border-radius: 30px;
   overflow: hidden;
-  margin: 15px auto;
+  margin: 0.5rem;
   text-align: center;
   box-shadow: rgba(211, 148, 109, 0.3) 4px 4px, rgba(211, 148, 109, 0.3) 6px 6px;
 }

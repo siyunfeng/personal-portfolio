@@ -3,12 +3,14 @@ import vintagerImg from '../assets/img/vintagerImg.png';
 import partypalImg from '../assets/img/partypalImg.png';
 import theGraceBritishBakeOff from '../assets/img/the-grace-british-bake-off.png';
 import guessMyNumberImg from '../assets/img/guess-siyun-number.png';
+import aviewcado from '../assets/img/Aviewcado.png';
 
 // Project Logos
 import logoVintager from '../assets/img/logo-Vintager.png';
 import logoTheGraceBritishBakeOff from '../assets/img/logo-the-grace-british-bake-off.png';
 import logoPartyPal from '../assets/img/logo-PartyPal.png';
 import logoGuessMyNumber from '../assets/img/logo-Guess-Siyun-Number.png';
+import logoAviewcado from '../assets/img/logo-Aviewcado.png';
 
 // Technologies Icons
 import javascript from '../assets/icons/javascript.svg';
@@ -46,6 +48,8 @@ import sql from '../assets/icons/sql.svg';
 import jwt from '../assets/icons/jwt.svg';
 import chai from '../assets/icons/chai.svg';
 import angular from '../assets/icons/angular.svg';
+import rxjs from '../assets/icons/rxjs.svg';
+import primeNG from '../assets/icons/primeng.png';
 
 const initialState = {
   projects: [
@@ -150,28 +154,54 @@ const initialState = {
       ],
     },
     {
-      type: 'Game Time',
-      title: `Guess My Number`,
-      slogan: `Unlock the Mystery, Guess My Number!`,
-      logo: logoGuessMyNumber,
-      imgUrl: guessMyNumberImg,
-      githubUrl: 'https://github.com/siyunfeng/guess-my-number',
-      websiteUrl: 'https://guessingnum.vercel.app/',
+      type: 'Post Graduation',
+      title: 'Aviewcado',
+      slogan: `Discover your favorite entertainment gems.`,
+      logo: logoAviewcado,
+      imgUrl: aviewcado,
+      githubUrl: 'https://github.com/siyunfeng/Aviewcado',
+      websiteUrl: 'https://aviewcado.vercel.app/',
       technologies: [
-        { techName: 'JavaScript', techIcon: javascript },
+        { techName: 'TypeScript', techIcon: typescript },
         { techName: 'NodeJS', techIcon: nodeJS },
-        { techName: 'React', techIcon: reactJS },
+        { techName: 'Angular', techIcon: angular },
         { techName: 'HTML5', techIcon: html5 },
-        { techName: 'CSS3', techIcon: css3 },
+        { techName: 'Sass', techIcon: sass },
+        { techName: 'RxJS', techIcon: rxjs },
+        { techName: 'PrimeNG', techIcon: primeNG },
         { techName: 'Git', techIcon: git },
         { techName: 'Vercel', techIcon: vercel },
       ],
-      intro: `Guess My Number is an interactive guessing game built using NodeJS and React. The user has 5 attempts to guess the secret number within the range of 1 to 20. `,
-      appFeatures: ``,
+      intro: `Aviewcado is a website built with TypeScript and Angular that fetches and displays data on movies and TV shows from The Movie Database (TMDB) API.`,
+      appFeatures: `Users can browse movies and TV shows by genre or search by title. Once a specific movie or TV show is selected users are redirected to an overview page that displays details about the movie or show, photos of the cast, official videos and images, and TMDB reviews. `,
       soloIntro: [
-        `Guess My Number started as a simple game I wrote using plain JavaScript, HTML, and CSS. I decided to rebuild the game using React and now I use it as a playground to practice various frontend skills. `,
+        `Designed a dynamic and responsive web interface by building reusable components and using CSS Grid system. `,
+        `Created Angular services to fetch and display data from the TMDB API. `,
       ],
     },
+    // {
+    //   type: 'Game Time',
+    //   title: `Guess My Number`,
+    //   slogan: `Unlock the Mystery, Guess My Number!`,
+    //   logo: logoGuessMyNumber,
+    //   imgUrl: guessMyNumberImg,
+    //   githubUrl: 'https://github.com/siyunfeng/guess-my-number',
+    //   websiteUrl: 'https://guessingnum.vercel.app/',
+    //   technologies: [
+    //     { techName: 'JavaScript', techIcon: javascript },
+    //     { techName: 'NodeJS', techIcon: nodeJS },
+    //     { techName: 'React', techIcon: reactJS },
+    //     { techName: 'HTML5', techIcon: html5 },
+    //     { techName: 'CSS3', techIcon: css3 },
+    //     { techName: 'Git', techIcon: git },
+    //     { techName: 'Vercel', techIcon: vercel },
+    //   ],
+    //   intro: `Guess My Number is an interactive guessing game built using NodeJS and React. The user has 5 attempts to guess the secret number within the range of 1 to 20. `,
+    //   appFeatures: ``,
+    //   soloIntro: [
+    //     `Guess My Number started as a simple game I wrote using plain JavaScript, HTML, and CSS. I decided to rebuild the game using React and now I use it as a playground to practice various frontend skills. `,
+    //   ],
+    // },
   ],
   technologies: [
     { techName: 'NodeJS', techIcon: nodeJS },
