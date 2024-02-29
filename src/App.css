@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Bona+Nova:wght@400;700&family=Fjalla+One&family=Libre+Franklin:wght@400;700&family=Special+Elite&family=Quicksand:wght@400;700&family=Borel&family=Roboto:wght@400;700&family=Figtree&family=Ubuntu:wght@400;700&family=Urbanist&family=Nova+Mono&family=Ysabeau+Infant:wght@400;700&display=swap');
 
+/* Default CSS */
+
+.App {
+  text-align: center;
+}
+
 /* General CSS */
 :root {
   --colorPrimary: rgba(100, 64, 39, 0.924);
@@ -77,10 +83,6 @@ a.navbar-link:active {
   text-decoration: none;
   color: inherit;
 }
-
-/* #basic-navbar-nav {
-  font-family: 'Nova Mono', Arial, sans-serif;
-} */
 
 nav.navbar {
   padding: 0.5rem 0;
@@ -298,13 +300,12 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   font-size: 65px;
   font-weight: 700;
   letter-spacing: 0.8px;
-  line-height: 1;
-  margin-bottom: 20px;
+  text-align: center;
+  margin: 0 auto;
   color: var(--colorPrimary);
   white-space: nowrap;
   overflow: hidden;
-  animation: typing 6s steps(40, end) infinite,
-    blink 0.8s steps(29, end) infinite;
+  animation: typing 6s steps(40, end), blink 0.8s steps(29, end) infinite;
   border-right: 5px solid white;
 }
 
@@ -544,6 +545,8 @@ div .tech-name {
 
   .project-card-container {
     flex-flow: column wrap;
+    margin: 2rem auto;
+    gap: 1rem;
   }
 
   .proj-imgbx {
@@ -590,7 +593,7 @@ div .tech-name {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  margin: 2rem auto;
+  margin: 2rem 4rem;
   gap: 2rem;
 }
 
@@ -906,6 +909,9 @@ div .tech-name {
 }
 
 /* Footer */
+footer {
+  background-color: rgba(100, 64, 39, 0.487);
+}
 
 .footer {
   padding: 1.5rem 0;
@@ -920,10 +926,4 @@ div .tech-name {
 .copy-right {
   margin-top: 1rem;
   color: var(--colorPrimary);
-}
-
-/* Default CSS */
-
-.App {
-  text-align: center;
 }

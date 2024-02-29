@@ -264,6 +264,8 @@ const initialState = {
     { techName: 'Tailwind CSS', techIcon: tailwindCSS },
     { techName: 'Styled-Components', techIcon: styledComponents },
     { techName: 'Sass', techIcon: sass },
+    { techName: 'PrimeNG', techIcon: primeNG },
+    { techName: 'RxJS', techIcon: rxjs },
     { techName: 'Git', techIcon: git },
     { techName: 'Webpack', techIcon: webpack },
     { techName: 'Hygraph', techIcon: hygraph },
