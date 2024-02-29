@@ -148,7 +148,7 @@ const initialState = {
         { techName: 'Render', techIcon: onRender },
       ],
       intro: `Vintager is a place for you to discover timeless pieces that capture the essence of bygone eras. From elegant dresses to charming accessories, embrace the allure of vintage and add a touch of nostalgia to your style. `,
-      appFeatures: `Vintager is a vintage fashion blog built with Next.js and GraphQL. Users can view featured and recent posts, browse by categories, and comment on the posts. Posts and comments are moderated to ensure quality control before publishing comments. The blog data is stored and managed using Hygaph, a headless content management system, and queried using GraphQL.The site was designed using Tailwind CSS to ensure the styling is consistent and fully responsive on both desktop and mobile devices. `,
+      appFeatures: `Vintager is a vintage fashion blog built with Next.js and GraphQL. Users can view featured and recent posts, browse by categories, and comment on the posts. Posts and comments are moderated to ensure quality control before publishing comments. The blog data is stored and managed using Hygaph, a headless content management system, and queried using GraphQL. The site was designed using Tailwind CSS to ensure the styling is consistent and fully responsive on both desktop and mobile devices. `,
       soloIntro: [
         `Managed schemas, models, and data storage with Hygraph, and developed GraphQL queries to retrieve the data. `,
         `Implemented a blog commenting system with an admin moderation feature to ensure quality control before publishing. `,
