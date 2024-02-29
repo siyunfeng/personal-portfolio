@@ -39,9 +39,13 @@ const ProjectDetailCard = (props) => {
           <img src={logo} alt={title} className='intro__img' />
         </div>
         <div className='portfolio-button-container'>
-          <a href={websiteUrl} target='_blank' rel='noopener noreferrer'>
-            <button className='proj-details-button'>Try it</button>
-          </a>
+          {websiteUrl ? (
+            <a href={websiteUrl} target='_blank' rel='noopener noreferrer'>
+              <button className='proj-details-button'>Website</button>
+            </a>
+          ) : (
+            ''
+          )}
           <a href={githubUrl} target='_blank' rel='noopener noreferrer'>
             <button className='proj-details-button'>GitHub</button>
           </a>

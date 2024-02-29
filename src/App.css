@@ -588,9 +588,10 @@ div .tech-name {
 .project-card-container {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+  gap: 2rem;
 }
 
 .proj-imgbx {
@@ -669,12 +670,12 @@ div .tech-name {
 
 #project-details {
   width: 80%;
-  margin: 1rem auto;
+  margin: 2rem auto;
 }
 
 .proj-details-main {
   width: 90%;
-  margin: auto;
+  margin: 1rem auto;
 }
 
 .intro .title {
@@ -767,6 +768,8 @@ div .tech-name {
 .portfolio-button-container {
   display: flex;
   justify-content: center;
+  margin: 1.5rem auto;
+  gap: 2rem;
 }
 
 @media (max-width: 600px) {
@@ -813,8 +816,8 @@ div .tech-name {
   }
 
   .portfolio-button-container {
-    flex-direction: column;
-    align-items: center;
+    margin: 1rem auto 0;
+    gap: 0;
   }
 
   .section__subtitle {

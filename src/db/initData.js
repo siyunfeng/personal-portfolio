@@ -4,6 +4,7 @@ import partypalImg from '../assets/img/partypalImg.png';
 import theGraceBritishBakeOff from '../assets/img/the-grace-british-bake-off.png';
 import guessMyNumberImg from '../assets/img/guess-siyun-number.png';
 import aviewcado from '../assets/img/Aviewcado.png';
+import chatter from '../assets/img/chatter.png';
 
 // Project Logos
 import logoVintager from '../assets/img/logo-Vintager.png';
@@ -11,6 +12,7 @@ import logoTheGraceBritishBakeOff from '../assets/img/logo-the-grace-british-bak
 import logoPartyPal from '../assets/img/logo-PartyPal.png';
 import logoGuessMyNumber from '../assets/img/logo-Guess-Siyun-Number.png';
 import logoAviewcado from '../assets/img/logo-Aviewcado.png';
+import logoChatter from '../assets/img/logo-Chatter.png';
 
 // Technologies Icons
 import javascript from '../assets/icons/javascript.svg';
@@ -75,7 +77,7 @@ const initialState = {
         { techName: 'Git', techIcon: git },
         { techName: 'Render', techIcon: onRender },
       ],
-      intro: `The Grace British Bake Off is an e-commerce site selling baked goods based on our favorite bakery show 'The Great British Bake Off'. `,
+      intro: `The Grace British Bake Off is an e-commerce site built by a team of four developers that selling baked goods inspired by 'The Great British Bake Off'. `,
       appFeatures: `Users can browse products, add products to cart, and checkout as a guest or registered user. `,
       soloIntro: [
         `Developed the website's overall design using React and vanilla CSS, providing a modern and fully responsive experience for users on both mobile and desktop devices. `,
@@ -87,7 +89,7 @@ const initialState = {
     {
       type: 'Grace Hopper',
       title: 'PartyPal',
-      slogan: 'Plan your party with PartyPal',
+      slogan: 'Plan Your Party with PartyPal',
       logo: logoPartyPal,
       imgUrl: partypalImg,
       githubUrl: 'https://github.com/siyunfeng/PartyPal',
@@ -112,11 +114,11 @@ const initialState = {
         { techName: 'Render', techIcon: onRender },
       ],
       demoUrl: 'https://www.youtube.com/embed/XSrBzZxs0Gs',
-      intro: `PartyPal is an app intended for users planning their next party that offers curated recommendations for caterers and venues based on location. `,
+      intro: `PartyPal is an event planning app built in collaboration with two other engineers that intended for users planning their next party that offers curated recommendations for caterers and venues based on location. `,
       appFeatures: `Users can search for caterers or venues in a specific location, filter the search results by price or cuisine, view details about a venue or caterer, and add selected venues/caterers to their Liked List. Users can then create an event and choose from the venues and/or caterers that they added to their list. `,
       soloIntro: [
-        `Designed the navigation and form components using React and Material-UI, ensuring a seamless user experience across the app. `,
-        `Developed RESTful APIs with Express, enabling efficient querying of users, events, and favorites data, and designed React components allowing users to create, edit, and manage their events, and list of liked venues/caterers. `,
+        `Built the navigation and form components using React and Material-UI, ensuring a seamless user experience across the app. `,
+        `Created RESTful APIs using Express for efficient data retrieval and created React components for users to manage events. `,
         `Implemented robust user authentication and gatekeeping middleware using Express, to safeguard the security of API routes. `,
         `Efficiently managed state changes throughout the application with React Hooks and Redux. `,
       ],
@@ -124,7 +126,7 @@ const initialState = {
     {
       type: 'Grace Hopper',
       title: 'Vintager',
-      slogan: 'Vintager, where fashion history comes alive.',
+      slogan: 'Vintager, Where Fashion History Comes Alive.',
       logo: logoVintager,
       imgUrl: vintagerImg,
       githubUrl: 'https://github.com/siyunfeng/vintage_blog',
@@ -156,7 +158,7 @@ const initialState = {
     {
       type: 'Post Graduation',
       title: 'Aviewcado',
-      slogan: `Discover your favorite entertainment gems.`,
+      slogan: `Discover Your Favorite Entertainment Gems.`,
       logo: logoAviewcado,
       imgUrl: aviewcado,
       githubUrl: 'https://github.com/siyunfeng/Aviewcado',
@@ -179,29 +181,59 @@ const initialState = {
         `Created Angular services to fetch and display data from the TMDB API. `,
       ],
     },
-    // {
-    //   type: 'Game Time',
-    //   title: `Guess My Number`,
-    //   slogan: `Unlock the Mystery, Guess My Number!`,
-    //   logo: logoGuessMyNumber,
-    //   imgUrl: guessMyNumberImg,
-    //   githubUrl: 'https://github.com/siyunfeng/guess-my-number',
-    //   websiteUrl: 'https://guessingnum.vercel.app/',
-    //   technologies: [
-    //     { techName: 'JavaScript', techIcon: javascript },
-    //     { techName: 'NodeJS', techIcon: nodeJS },
-    //     { techName: 'React', techIcon: reactJS },
-    //     { techName: 'HTML5', techIcon: html5 },
-    //     { techName: 'CSS3', techIcon: css3 },
-    //     { techName: 'Git', techIcon: git },
-    //     { techName: 'Vercel', techIcon: vercel },
-    //   ],
-    //   intro: `Guess My Number is an interactive guessing game built using NodeJS and React. The user has 5 attempts to guess the secret number within the range of 1 to 20. `,
-    //   appFeatures: ``,
-    //   soloIntro: [
-    //     `Guess My Number started as a simple game I wrote using plain JavaScript, HTML, and CSS. I decided to rebuild the game using React and now I use it as a playground to practice various frontend skills. `,
-    //   ],
-    // },
+    {
+      type: 'Post Graduation',
+      title: 'Chatter',
+      slogan: `Connecting Minds, Creating Bonds! `,
+      logo: logoChatter,
+      imgUrl: chatter,
+      githubUrl: 'https://github.com/siyunfeng/chatter',
+      websiteUrl: '',
+      technologies: [
+        { techName: 'JavaScript', techIcon: javascript },
+        { techName: 'NodeJS', techIcon: nodeJS },
+        { techName: 'Pug', techIcon: pug },
+        { techName: 'jQuery', techIcon: jquery },
+        { techName: 'MongoDB', techIcon: mongodb },
+        { techName: 'Express', techIcon: express },
+        { techName: 'Socket IO', techIcon: socketio },
+        { techName: 'HTML5', techIcon: html5 },
+        { techName: 'CSS3', techIcon: css3 },
+        { techName: 'Bootstrap', techIcon: bootstrap },
+        { techName: 'Git', techIcon: git },
+        { techName: 'Vercel', techIcon: vercel },
+      ],
+      intro: `A social media app based on Twitter that I built as a solo project to learn MongoDB, Mongoose, SocketIO, jQuery, and Pug. `,
+      appFeatures: `Users can seamlessly create accounts and customize their accounts with username and profile picture, create and publish posts, interact with posts by liking, reposting, and replying. With Chatter's search feature, users can explore other users and posts. Chatter's direct messaging feature allows users to connect with their followings. `,
+      soloIntro: [
+        `Utilized Socket.IO for real-time, bi-directional communication, enabling instant messaging and live notifications between users. `,
+        `Architectured MongoDB schemas using Mongoose to streamline the modeling, validation, and querying of data, resulting in a flexible and scalable database layer. `,
+        `Designed a dynamic and responsive web interface by seamlessly integrating Pug for front-end templating and jQuery for interactive client-side scripting, enhancing the overall user experience and website functionality. `,
+      ],
+    },
+    {
+      type: 'Post Graduation',
+      title: `Guess My Number`,
+      slogan: `Unlock the Mystery, Guess My Number!`,
+      logo: logoGuessMyNumber,
+      imgUrl: guessMyNumberImg,
+      githubUrl: 'https://github.com/siyunfeng/guess-my-number',
+      websiteUrl: 'https://guessingnum.vercel.app/',
+      technologies: [
+        { techName: 'JavaScript', techIcon: javascript },
+        { techName: 'NodeJS', techIcon: nodeJS },
+        { techName: 'React', techIcon: reactJS },
+        { techName: 'HTML5', techIcon: html5 },
+        { techName: 'CSS3', techIcon: css3 },
+        { techName: 'Git', techIcon: git },
+        { techName: 'Vercel', techIcon: vercel },
+      ],
+      intro: `Guess My Number is an interactive guessing game built using NodeJS and React. The user has 5 attempts to guess the secret number within the range of 1 to 20. `,
+      appFeatures: ``,
+      soloIntro: [
+        `Guess My Number started as a simple game I wrote using plain JavaScript, HTML, and CSS. I decided to rebuild the game using React and now I use it as a playground to practice various frontend skills. `,
+      ],
+    },
   ],
   technologies: [
     { techName: 'NodeJS', techIcon: nodeJS },
@@ -219,7 +251,7 @@ const initialState = {
     { techName: 'GraphQL', techIcon: graphQL },
     { techName: 'MongoDB', techIcon: mongodb },
     { techName: 'jQuery', techIcon: jquery },
-    { techName: 'Socket.io', techIcon: socketio },
+    { techName: 'Socket IO', techIcon: socketio },
     { techName: 'SQL', techIcon: sql },
     { techName: 'Pug', techIcon: pug },
     { techName: 'JWT', techIcon: jwt },
