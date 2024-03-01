@@ -114,7 +114,7 @@ const initialState = {
         { techName: 'Render', techIcon: onRender },
       ],
       demoUrl: 'https://www.youtube.com/embed/XSrBzZxs0Gs',
-      intro: `PartyPal is an event planning app built in collaboration with two other engineers that intended for users planning their next party that offers curated recommendations for caterers and venues based on location. `,
+      intro: `PartyPal is an event planning app built in collaboration with two other engineers that is intended for users planning their next party and offers curated recommendations for caterers and venues based on location. `,
       appFeatures: `Users can search for caterers or venues in a specific location, filter the search results by price or cuisine, view details about a venue or caterer, and add selected venues/caterers to their Liked List. Users can then create an event and choose from the venues and/or caterers that they added to their list. `,
       soloIntro: [
         `Built the navigation and form components using React and Material-UI, ensuring a seamless user experience across the app. `,
