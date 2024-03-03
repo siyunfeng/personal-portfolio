@@ -204,7 +204,7 @@ const initialState = {
         { techName: 'Vercel', techIcon: vercel },
       ],
       intro: `A social media app based on Twitter that I built as a solo project to learn MongoDB, Mongoose, SocketIO, jQuery, and Pug. `,
-      appFeatures: `Users can seamlessly create accounts and customize their accounts with username and profile picture, create and publish posts, interact with posts by liking, reposting, and replying. With Chatter's search feature, users can explore other users and posts. Chatter's direct messaging feature allows users to connect with their followings. `,
+      appFeatures: `Users can seamlessly create accounts and customize their accounts with usernames and profile pictures, create and publish posts, interact with posts by liking, reposting, and replying. With Chatter's search feature, users can explore other users and posts. Chatter's direct messaging feature allows users to connect with their followers and follow. `,
       soloIntro: [
         `Utilized Socket.IO for real-time, bi-directional communication, enabling instant messaging and live notifications between users. `,
         `Architectured MongoDB schemas using Mongoose to streamline the modeling, validation, and querying of data, resulting in a flexible and scalable database layer. `,
