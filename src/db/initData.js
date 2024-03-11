@@ -174,11 +174,12 @@ const initialState = {
         { techName: 'Git', techIcon: git },
         { techName: 'Vercel', techIcon: vercel },
       ],
-      intro: `Aviewcado is a website built with TypeScript and Angular that fetches and displays data on movies and TV shows from The Movie Database (TMDB) API.`,
+      intro: `Aviewcado is a website that provides information on the latest and most popular movies and TV shows. It was built with TypeScript and Angular that fetches and displays data from The Movie Database (TMDB) API.`,
       appFeatures: `Users can browse movies and TV shows by genre or search by title. Once a specific movie or TV show is selected users are redirected to an overview page that displays details about the movie or show, photos of the cast, official videos and images, and TMDB reviews. `,
       soloIntro: [
-        `Designed a dynamic and responsive web interface by building reusable components and using CSS Grid system. `,
-        `Created Angular services to fetch and display data from the TMDB API. `,
+        `Designed a fully responsive website by leveraging PrimeNG components for enhanced user interfaces and functionality. `,
+        `Developed reusable Angular components and services to fetch and display data from The Movie Database (TMDB) API. `,
+        `Leveraged TypeScript's type safety to enhance error handling, preventing runtime errors and improving overall code quality. `,
       ],
     },
     {
