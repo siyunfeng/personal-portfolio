@@ -1,6 +1,7 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './components/NavBar';
+import AboutMe from './components/AboutMe';
 import Banner from './components/Banner';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
@@ -35,6 +36,7 @@ function App() {
           <Switch>
             <Route exact path='/' component={Banner} />
             <Route exact path='/home' component={Banner} />
+            <Route path='/about me' component={AboutMe} />
             <Route path='/skills' component={TechnicalSkills} />
             <Route exact path='/projects' component={Projects} />
             <Route path='/projects/:title' component={ProjectDetailCard} />

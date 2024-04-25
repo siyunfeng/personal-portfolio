@@ -1,29 +1,19 @@
 // import headerImg from '../assets/img/banner-avatar3.png';
+import { connect } from 'react-redux';
 import profileImg from '../assets/img/profile.jpg';
 
-const Banner = () => {
+const Banner = ({ banner }) => {
   return (
     <section className='banner' id='home'>
       <div>
         <div className='align-items-center banner-layout'>
           <div className='banner-main'>
-            <h1>{`Hi, I'm Siyun.`}</h1>
-            <h4 className='wrap'>Full Stack Developer</h4>
+            <h1>{banner.greeting}</h1>
+            <h4 className='wrap'>{banner.title}</h4>
             <div className='banner-intro'>
-              <p>
-                As a JavaScript developer, I possess a unique blend of
-                creativity, teamwork, and rapid learning abilities. My passion
-                lies in designing applications that prioritize the user
-                experience and allow me to showcase my creativity.
-              </p>
-              <p>
-                Drawing from 6 years of HR and customer service experience, my
-                communication, interpersonal skills, and problem-solving
-                abilities allow me to thrive in collaborative environments. I am
-                dedicated to continuously improving my skills and making
-                valuable contributions to impactful software development
-                projects.
-              </p>
+              {banner.intro.map((intro, index) => (
+                <p key={index}>{intro}</p>
+              ))}
             </div>
             <a href='https://www.linkedin.com/in/siyunfeng/' target={`_blank`}>
               <button className='banner-connect-button'>Let's connect</button>
@@ -38,4 +28,10 @@ const Banner = () => {
   );
 };
 
-export default Banner;
+const mapState = (state) => {
+  return {
+    banner: state.banner,
+  };
+};
+
+export default connect(mapState)(Banner);

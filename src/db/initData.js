@@ -5,6 +5,7 @@ import theGraceBritishBakeOff from '../assets/img/the-grace-british-bake-off.png
 import guessMyNumberImg from '../assets/img/guess-siyun-number.png';
 import aviewcado from '../assets/img/Aviewcado.png';
 import chatter from '../assets/img/chatter.png';
+import aboutMeWorkingImg from '../assets/img/work-from-home-1.png';
 
 // Project Logos
 import logoVintager from '../assets/img/logo-Vintager.png';
@@ -54,6 +55,26 @@ import rxjs from '../assets/icons/rxjs.svg';
 import primeNG from '../assets/icons/primeng.png';
 
 const initialState = {
+  banner: {
+    greeting: `Hi, I'm Siyun.`,
+    title: 'Full Stack Developer',
+    intro: [
+      `As a JavaScript developer, I possess a unique blend of creativity, teamwork, and rapid learning abilities. My passion lies in designing applications that prioritize the user
+      experience and allow me to showcase my creativity.`,
+      `Drawing from 6 years of HR and customer service experience, my communication, interpersonal skills, and problem-solving abilities allow me to thrive in collaborative environments. I am dedicated to continuously improving my skills and making valuable contributions to impactful software development projects.`,
+    ],
+  },
+  aboutme: {
+    title: 'Fun Facts About Me',
+    funFacts: [
+      `I speak four languages: Cantonese, Mandarin, English, and
+    JavaScript. I'm an animal lover, especially fond of cats and
+    dogs. My favorite anime series are Naruto and One Piece. I enjoy
+    traveling to new places in search of tasty foods and stunning
+    views. My newest hobby is crocheting and embroidering.`,
+    ],
+    img: aboutMeWorkingImg,
+  },
   projects: [
     {
       type: 'Grace Hopper',
@@ -274,7 +295,7 @@ const initialState = {
     { techName: 'Render', techIcon: onRender },
     { techName: 'Vercel', techIcon: vercel },
   ],
-  navLinkNames: ['home', 'skills', 'projects'],
+  navLinkNames: ['home', 'skills', 'projects', 'about me'],
 };
 
 export default initialState;
