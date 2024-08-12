@@ -59,7 +59,7 @@ const initialState = {
     greeting: `Hi, I'm Siyun.`,
     title: 'Full Stack Developer',
     intro: [
-      `As a JavaScript developer, I possess a unique blend of creativity, teamwork, and rapid learning abilities. My passion lies in designing applications that prioritize the user
+      `As a detail-oriented and adaptable software developer, I possess a unique blend of creativity, teamwork, and rapid learning abilities. My passion lies in designing applications that prioritize the user
       experience and allow me to showcase my creativity.`,
       `Drawing from 6 years of HR and customer service experience, my communication, interpersonal skills, and problem-solving abilities allow me to thrive in collaborative environments. I am dedicated to continuously improving my skills and making valuable contributions to impactful software development projects.`,
     ],
@@ -67,8 +67,7 @@ const initialState = {
   aboutme: {
     title: 'Fun Facts About Me',
     funFacts: [
-      `I speak four languages: Cantonese, Mandarin, English, and
-    JavaScript. I'm an animal lover, especially fond of cats and
+      `I know 5 languages: Cantonese, Mandarin, English, JavaScript, and Python. I'm an animal lover, especially fond of cats and
     dogs. My favorite anime series are Naruto and One Piece. I enjoy
     traveling to new places in search of tasty foods and stunning
     views. My newest hobby is crocheting and embroidering.`,
@@ -101,10 +100,10 @@ const initialState = {
       intro: `The Grace British Bake Off is an e-commerce site built by a team of four developers that selling baked goods inspired by 'The Great British Bake Off'. `,
       appFeatures: `Users can browse products, add products to cart, and checkout as a guest or registered user. `,
       soloIntro: [
-        `Developed the website's overall design using React and vanilla CSS, providing a modern and fully responsive experience for users on both mobile and desktop devices. `,
-        `Designed the log-in/sign-up, cart, and checkout UI components using React, resulting in an intuitive and visually appealing user experience. `,
-        `Built REST API routes for products, orders, and users using Express, effectively managing HTTP requests and implementing thorough error handling. `,
-        `Architected Sequelize schemas for the order, product, and user models, defining the structure of the PostgreSQL database. `,
+        `Designed a modern and fully responsive experience for mobile and desktop using React, improving accessibility `,
+        `Built REST API routes using Express to manage HTTP requests with thorough error handling `,
+        `Architected Sequelize schemas for the order, product, and user models, defining the structure of the PostgreSQL database `,
+        `Designed the log-in/sign-up, cart, and checkout UI components using React, resulting in an intuitive and visually appealing user experience `,
       ],
     },
     {
@@ -138,10 +137,10 @@ const initialState = {
       intro: `PartyPal is an event planning app built in collaboration with two other engineers that is intended for users planning their next party and offers curated recommendations for caterers and venues based on location. `,
       appFeatures: `Users can search for caterers or venues in a specific location, filter the search results by price or cuisine, view details about a venue or caterer, and add selected venues/caterers to their Liked List. Users can then create an event and choose from the venues and/or caterers that they added to their list. `,
       soloIntro: [
-        `Built the navigation and form components using React and Material-UI, ensuring a seamless user experience across the app. `,
-        `Created RESTful APIs using Express for efficient data retrieval and created React components for users to manage events. `,
-        `Implemented robust user authentication and gatekeeping middleware using Express, to safeguard the security of API routes. `,
-        `Efficiently managed state changes throughout the application with React Hooks and Redux. `,
+        `Built navigation and form components using React and Material-UI, ensuring a seamless user experience `,
+        `Created RESTful APIs using Express for data retrieval and developed React components for managing events `,
+        `Implemented robust user authentication and gatekeeping middleware with Express to secure API routes `,
+        `Managed state changes throughout the application with React Hooks and Redux `,
       ],
     },
     {
@@ -198,9 +197,9 @@ const initialState = {
       intro: `Aviewcado is a website that provides information on the latest and most popular movies and TV shows. It was built with TypeScript and Angular that fetches and displays data from The Movie Database (TMDB) API.`,
       appFeatures: `Users can browse movies and TV shows by genre or search by title. Once a specific movie or TV show is selected users are redirected to an overview page that displays details about the movie or show, photos of the cast, official videos and images, and TMDB reviews. `,
       soloIntro: [
-        `Designed a fully responsive website by leveraging PrimeNG components for enhanced user interfaces and functionality. `,
-        `Developed reusable Angular components and services to fetch and display data from The Movie Database (TMDB) API. `,
-        `Leveraged TypeScript's type safety to enhance error handling, preventing runtime errors and improving overall code quality. `,
+        `Designed a fully responsive website with PrimeNG components for enhanced user interfaces and functionality `,
+        `Developed reusable Angular components and services to fetch and display data from The Movie Database API `,
+        `Leveraged TypeScript's type safety to enhance error handling, preventing runtime errors and improving code quality`,
       ],
     },
     {
@@ -228,9 +227,9 @@ const initialState = {
       intro: `A social media app based on Twitter that I built as a solo project to learn MongoDB, Mongoose, SocketIO, jQuery, and Pug. `,
       appFeatures: `Users can seamlessly create accounts and customize their accounts with usernames and profile pictures, create and publish posts, interact with posts by liking, reposting, and replying. With Chatter's search feature, users can explore other users and posts. Chatter's direct messaging feature allows users to connect with their followers and follow. `,
       soloIntro: [
-        `Utilized Socket.IO for real-time, bi-directional communication, enabling instant messaging and live notifications between users. `,
-        `Architectured MongoDB schemas using Mongoose to streamline the modeling, validation, and querying of data, resulting in a flexible and scalable database layer. `,
-        `Designed a dynamic and responsive web interface by seamlessly integrating Pug for front-end templating and jQuery for interactive client-side scripting, enhancing the overall user experience and website functionality. `,
+        `Enabled instant messaging and live notifications using Socket.IO for real-time communication between users `,
+        `Streamlined data modeling, validation, and querying with Mongoose, creating a flexible and scalable database `,
+        `Enhanced user experience with a dynamic interface using Pug and interactive scripting with jQuery `,
       ],
     },
     {
