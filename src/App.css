@@ -305,16 +305,17 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   color: var(--colorPrimary);
   white-space: nowrap;
   overflow: hidden;
-  animation: typing 6s steps(40, end), blink 0.8s steps(29, end) infinite;
+  width: 14ch;
+  animation: typing 4s steps(14), blink 0.8s steps(13) infinite;
   border-right: 5px solid white;
 }
 
 @keyframes typing {
   from {
-    width: 0;
+    width: 0ch;
   }
   to {
-    width: 100%;
+    width: 15ch;
   }
 }
 
